@@ -1,0 +1,3 @@
+[console_scripts]
+referee_node = ican_referee_system.referee_node:main
+

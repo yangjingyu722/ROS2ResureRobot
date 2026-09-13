@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/ican_example_navigation/ican_example_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/ican_example_navigation/ican_example_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/ican_example_navigation/ican_example_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/ican_example_navigation/ican_example_navigation.egg-info/requires.txt
+writing top-level names to ../../build/ican_example_navigation/ican_example_navigation.egg-info/top_level.txt
+reading manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/ican_example_navigation/ican_example_navigation.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation-0.1.0-py3.10.egg-info
+running install_scripts
+Installing initial_pose_publisher script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation
+writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/install.log'

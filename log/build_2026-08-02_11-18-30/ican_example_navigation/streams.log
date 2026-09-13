@@ -1,0 +1,33 @@
+[0.954s] Invoking command in '/home/houshengao/ican_shoot/build/ican_example_navigation': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data
+[1.168s] running develop
+[1.327s] running egg_info
+[1.327s] creating ican_example_navigation.egg-info
+[1.327s] writing ican_example_navigation.egg-info/PKG-INFO
+[1.327s] writing dependency_links to ican_example_navigation.egg-info/dependency_links.txt
+[1.327s] writing entry points to ican_example_navigation.egg-info/entry_points.txt
+[1.329s] writing requirements to ican_example_navigation.egg-info/requires.txt
+[1.329s] writing top-level names to ican_example_navigation.egg-info/top_level.txt
+[1.329s] writing manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+[1.331s] reading manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+[1.334s] writing manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+[1.334s] running build_ext
+[1.334s] Creating /home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican-example-navigation.egg-link (link to .)
+[1.335s] Installing initial_pose_publisher script to /home/houshengao/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation
+[1.335s] 
+[1.335s] Installed /home/houshengao/ican_shoot/build/ican_example_navigation
+[1.335s] running symlink_data
+[1.335s] creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index
+[1.335s] creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index
+[1.335s] creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index/packages
+[1.335s] symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/resource/ican_example_navigation -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index/packages
+[1.335s] symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/package.xml -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation
+[1.335s] creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/launch
+[1.335s] symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/launch/navigation.launch.py -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/launch
+[1.336s] creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+[1.336s] symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/maps/land_shoot_map.yaml -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+[1.336s] symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/maps/land_shoot_map.pgm -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+[1.336s] creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/config
+[1.336s] symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/config/nav2_params.yaml -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/config
+[1.336s] creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/rviz
+[1.336s] symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/rviz/example_nav.rviz -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/rviz
+[1.455s] Invoked command in '/home/houshengao/ican_shoot/build/ican_example_navigation' returned '0': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data

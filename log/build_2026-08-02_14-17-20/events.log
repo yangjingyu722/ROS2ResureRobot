@@ -1,0 +1,395 @@
+[0.000000] (-) TimerEvent: {}
+[0.000794] (ican_example_navigation) JobQueued: {'identifier': 'ican_example_navigation', 'dependencies': OrderedDict()}
+[0.000825] (ican_example_ring_aim) JobQueued: {'identifier': 'ican_example_ring_aim', 'dependencies': OrderedDict()}
+[0.000836] (ican_example_mission) JobQueued: {'identifier': 'ican_example_mission', 'dependencies': OrderedDict([('ican_example_navigation', '/home/houshengao/ican_shoot/install/ican_example_navigation'), ('ican_example_ring_aim', '/home/houshengao/ican_shoot/install/ican_example_ring_aim')])}
+[0.000853] (ican_example_navigation) JobStarted: {'identifier': 'ican_example_navigation'}
+[0.029014] (ican_example_ring_aim) JobStarted: {'identifier': 'ican_example_ring_aim'}
+[0.100517] (-) TimerEvent: {}
+[0.201287] (-) TimerEvent: {}
+[0.301465] (-) TimerEvent: {}
+[0.403399] (-) TimerEvent: {}
+[0.503775] (-) TimerEvent: {}
+[0.606838] (-) TimerEvent: {}
+[0.707051] (-) TimerEvent: {}
+[0.807852] (-) TimerEvent: {}
+[0.908330] (-) TimerEvent: {}
+[1.010189] (-) TimerEvent: {}
+[1.110781] (-) TimerEvent: {}
+[1.211647] (-) TimerEvent: {}
+[1.312052] (-) TimerEvent: {}
+[1.413392] (-) TimerEvent: {}
+[1.516585] (-) TimerEvent: {}
+[1.617652] (-) TimerEvent: {}
+[1.688575] (ican_example_ring_aim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/houshengao/ican_shoot/build/ican_example_ring_aim/build', '--no-deps', 'symlink_data'], 'cwd': '/home/houshengao/ican_shoot/build/ican_example_ring_aim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CODEX_CI': '1', 'LANGUAGE': 'zh_CN:en', 'USER': 'houshengao', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ican_shoot_sim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/houshengao', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'zh_CN.UTF-8', 'LC_CTYPE': 'C.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1600', 'IM_CONFIG_CHECK_ENV': '1', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e64908b1ff6055fbd75361676a6eb184', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/opt/ican_shoot_sim', 'CODEX_PERMISSION_PROFILE': ':workspace', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'houshengao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'houshengao', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/houshengao/.codex/packages/standalone/releases/0.146.0-x86_64-unknown-linux-musl/codex-path:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/home/houshengao/.codex/tmp/arg0/codex-arg0xkxm4u:/home/houshengao/.codex/packages/standalone/releases/0.146.0-x86_64-unknown-linux-musl/codex-path:/opt/ros/humble/bin:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/houshengao-virtual-machine:@/tmp/.ICE-unix/1600,unix/houshengao-virtual-machine:/tmp/.ICE-unix/1600', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a140bdc3_11d2_428c_aac0_47aee1789aea', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.C4R2S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ican_shoot_sim:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019fc11b-c918-7090-94a7-300ec029eb96', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/houshengao/ican_shoot/build/ican_example_ring_aim', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'fcitx', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e64908b1ff6055fbd75361676a6eb184', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/houshengao/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/opt/ican_shoot_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/opt/ican_shoot_sim'}, 'shell': False}
+[1.719861] (-) TimerEvent: {}
+[1.820064] (-) TimerEvent: {}
+[1.921963] (-) TimerEvent: {}
+[2.022853] (-) TimerEvent: {}
+[2.123025] (-) TimerEvent: {}
+[2.189344] (ican_example_ring_aim) StdoutLine: {'line': b'running develop\n'}
+[2.189482] (ican_example_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/houshengao/ican_shoot/build/ican_example_navigation/build', '--no-deps', 'symlink_data'], 'cwd': '/home/houshengao/ican_shoot/build/ican_example_navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CODEX_CI': '1', 'LANGUAGE': 'zh_CN:en', 'USER': 'houshengao', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ican_shoot_sim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/houshengao', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'zh_CN.UTF-8', 'LC_CTYPE': 'C.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1600', 'IM_CONFIG_CHECK_ENV': '1', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e64908b1ff6055fbd75361676a6eb184', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/opt/ican_shoot_sim', 'CODEX_PERMISSION_PROFILE': ':workspace', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'houshengao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'houshengao', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/houshengao/.codex/packages/standalone/releases/0.146.0-x86_64-unknown-linux-musl/codex-path:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/home/houshengao/.codex/tmp/arg0/codex-arg0xkxm4u:/home/houshengao/.codex/packages/standalone/releases/0.146.0-x86_64-unknown-linux-musl/codex-path:/opt/ros/humble/bin:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/houshengao-virtual-machine:@/tmp/.ICE-unix/1600,unix/houshengao-virtual-machine:/tmp/.ICE-unix/1600', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a140bdc3_11d2_428c_aac0_47aee1789aea', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.C4R2S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ican_shoot_sim:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019fc11b-c918-7090-94a7-300ec029eb96', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/houshengao/ican_shoot/build/ican_example_navigation', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'fcitx', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e64908b1ff6055fbd75361676a6eb184', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/houshengao/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:/opt/ican_shoot_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/opt/ican_shoot_sim'}, 'shell': False}
+[2.223579] (-) TimerEvent: {}
+[2.328638] (-) TimerEvent: {}
+[2.428846] (-) TimerEvent: {}
+[2.529057] (-) TimerEvent: {}
+[2.531758] (ican_example_ring_aim) StdoutLine: {'line': b'running egg_info\n'}
+[2.531907] (ican_example_ring_aim) StdoutLine: {'line': b'writing ican_example_ring_aim.egg-info/PKG-INFO\n'}
+[2.535461] (ican_example_ring_aim) StdoutLine: {'line': b'writing dependency_links to ican_example_ring_aim.egg-info/dependency_links.txt\n'}
+[2.538185] (ican_example_ring_aim) StdoutLine: {'line': b'writing entry points to ican_example_ring_aim.egg-info/entry_points.txt\n'}
+[2.541394] (ican_example_ring_aim) StdoutLine: {'line': b'writing requirements to ican_example_ring_aim.egg-info/requires.txt\n'}
+[2.541523] (ican_example_ring_aim) StdoutLine: {'line': b'writing top-level names to ican_example_ring_aim.egg-info/top_level.txt\n'}
+[2.547864] (ican_example_ring_aim) StdoutLine: {'line': b"reading manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'\n"}
+[2.552944] (ican_example_ring_aim) StdoutLine: {'line': b"writing manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'\n"}
+[2.553769] (ican_example_ring_aim) StdoutLine: {'line': b'running build_ext\n'}
+[2.553921] (ican_example_ring_aim) StdoutLine: {'line': b'Creating /home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican-example-ring-aim.egg-link (link to .)\n'}
+[2.556281] (ican_example_ring_aim) StdoutLine: {'line': b'Installing ring_aim_node script to /home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim\n'}
+[2.556464] (ican_example_ring_aim) StdoutLine: {'line': b'\n'}
+[2.556505] (ican_example_ring_aim) StdoutLine: {'line': b'Installed /home/houshengao/ican_shoot/build/ican_example_ring_aim\n'}
+[2.556575] (ican_example_ring_aim) StdoutLine: {'line': b'running symlink_data\n'}
+[2.586589] (ican_example_navigation) StdoutLine: {'line': b'running develop\n'}
+[2.629470] (-) TimerEvent: {}
+[2.730376] (-) TimerEvent: {}
+[2.755848] (ican_example_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[2.755983] (ican_example_ring_aim) CommandEnded: {'returncode': 0}
+[2.808985] (ican_example_ring_aim) JobEnded: {'identifier': 'ican_example_ring_aim', 'rc': 0}
+[2.811493] (ican_example_navigation) StdoutLine: {'line': b'writing ican_example_navigation.egg-info/PKG-INFO\n'}
+[2.811573] (ican_example_navigation) StdoutLine: {'line': b'writing dependency_links to ican_example_navigation.egg-info/dependency_links.txt\n'}
+[2.811608] (ican_example_navigation) StdoutLine: {'line': b'writing entry points to ican_example_navigation.egg-info/entry_points.txt\n'}
+[2.811640] (ican_example_navigation) StdoutLine: {'line': b'writing requirements to ican_example_navigation.egg-info/requires.txt\n'}
+[2.811679] (ican_example_navigation) StdoutLine: {'line': b'writing top-level names to ican_example_navigation.egg-info/top_level.txt\n'}
+[2.811709] (ican_example_navigation) StdoutLine: {'line': b"reading manifest file 'ican_example_navigation.egg-info/SOURCES.txt'\n"}
+[2.811739] (ican_example_navigation) StdoutLine: {'line': b"writing manifest file 'ican_example_navigation.egg-info/SOURCES.txt'\n"}
+[2.811771] (ican_example_navigation) StdoutLine: {'line': b'running build_ext\n'}
+[2.811800] (ican_example_navigation) StdoutLine: {'line': b'Creating /home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican-example-navigation.egg-link (link to .)\n'}
+[2.811846] (ican_example_navigation) StdoutLine: {'line': b'Installing initial_pose_publisher script to /home/houshengao/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation\n'}
+[2.811878] (ican_example_navigation) StdoutLine: {'line': b'\n'}
+[2.811906] (ican_example_navigation) StdoutLine: {'line': b'Installed /home/houshengao/ican_shoot/build/ican_example_navigation\n'}
+[2.811934] (ican_example_navigation) StdoutLine: {'line': b'running symlink_data\n'}
+[2.811962] (ican_example_navigation) CommandEnded: {'returncode': 0}
+[2.822718] (ican_example_navigation) JobEnded: {'identifier': 'ican_example_navigation', 'rc': 0}
+[2.825664] (ican_example_mission) JobStarted: {'identifier': 'ican_example_mission'}
+[2.830751] (-) TimerEvent: {}
+[2.931329] (-) TimerEvent: {}
+[3.032937] (-) TimerEvent: {}
+[3.133634] (-) TimerEvent: {}
+[3.235081] (-) TimerEvent: {}
+[3.335408] (-) TimerEvent: {}
+[3.437212] (-) TimerEvent: {}
+[3.538466] (-) TimerEvent: {}
+[3.638742] (-) TimerEvent: {}
+[3.738907] (-) TimerEvent: {}
+[3.839096] (-) TimerEvent: {}
+[3.939317] (-) TimerEvent: {}
+[4.039479] (-) TimerEvent: {}
+[4.139645] (-) TimerEvent: {}
+[4.239837] (-) TimerEvent: {}
+[4.340206] (-) TimerEvent: {}
+[4.440354] (-) TimerEvent: {}
+[4.540524] (-) TimerEvent: {}
+[4.640706] (-) TimerEvent: {}
+[4.740974] (-) TimerEvent: {}
+[4.841429] (-) TimerEvent: {}
+[4.941598] (-) TimerEvent: {}
+[5.041850] (-) TimerEvent: {}
+[5.142028] (-) TimerEvent: {}
+[5.242202] (-) TimerEvent: {}
+[5.342372] (-) TimerEvent: {}
+[5.442570] (-) TimerEvent: {}
+[5.542735] (-) TimerEvent: {}
+[5.642909] (-) TimerEvent: {}
+[5.743074] (-) TimerEvent: {}
+[5.843198] (-) TimerEvent: {}
+[5.943368] (-) TimerEvent: {}
+[6.043661] (-) TimerEvent: {}
+[6.144015] (-) TimerEvent: {}
+[6.245600] (-) TimerEvent: {}
+[6.345808] (-) TimerEvent: {}
+[6.446057] (-) TimerEvent: {}
+[6.546280] (-) TimerEvent: {}
+[6.646510] (-) TimerEvent: {}
+[6.747495] (-) TimerEvent: {}
+[6.847861] (-) TimerEvent: {}
+[6.948116] (-) TimerEvent: {}
+[7.048293] (-) TimerEvent: {}
+[7.148466] (-) TimerEvent: {}
+[7.248630] (-) TimerEvent: {}
+[7.348835] (-) TimerEvent: {}
+[7.449041] (-) TimerEvent: {}
+[7.549277] (-) TimerEvent: {}
+[7.649478] (-) TimerEvent: {}
+[7.749849] (-) TimerEvent: {}
+[7.850026] (-) TimerEvent: {}
+[7.950372] (-) TimerEvent: {}
+[8.050826] (-) TimerEvent: {}
+[8.151367] (-) TimerEvent: {}
+[8.251545] (-) TimerEvent: {}
+[8.351985] (-) TimerEvent: {}
+[8.452273] (-) TimerEvent: {}
+[8.552449] (-) TimerEvent: {}
+[8.652696] (-) TimerEvent: {}
+[8.752931] (-) TimerEvent: {}
+[8.853714] (-) TimerEvent: {}
+[8.953906] (-) TimerEvent: {}
+[9.054131] (-) TimerEvent: {}
+[9.154313] (-) TimerEvent: {}
+[9.254991] (-) TimerEvent: {}
+[9.355189] (-) TimerEvent: {}
+[9.455506] (-) TimerEvent: {}
+[9.556111] (-) TimerEvent: {}
+[9.656589] (-) TimerEvent: {}
+[9.756873] (-) TimerEvent: {}
+[9.857044] (-) TimerEvent: {}
+[9.957241] (-) TimerEvent: {}
+[10.057421] (-) TimerEvent: {}
+[10.158426] (-) TimerEvent: {}
+[10.258706] (-) TimerEvent: {}
+[10.358876] (-) TimerEvent: {}
+[10.459207] (-) TimerEvent: {}
+[10.560381] (-) TimerEvent: {}
+[10.660601] (-) TimerEvent: {}
+[10.760907] (-) TimerEvent: {}
+[10.861101] (-) TimerEvent: {}
+[10.961363] (-) TimerEvent: {}
+[11.061707] (-) TimerEvent: {}
+[11.161898] (-) TimerEvent: {}
+[11.262086] (-) TimerEvent: {}
+[11.362395] (-) TimerEvent: {}
+[11.462588] (-) TimerEvent: {}
+[11.562998] (-) TimerEvent: {}
+[11.663261] (-) TimerEvent: {}
+[11.763447] (-) TimerEvent: {}
+[11.863705] (-) TimerEvent: {}
+[11.964184] (-) TimerEvent: {}
+[12.064391] (-) TimerEvent: {}
+[12.164689] (-) TimerEvent: {}
+[12.264979] (-) TimerEvent: {}
+[12.365800] (-) TimerEvent: {}
+[12.466168] (-) TimerEvent: {}
+[12.566353] (-) TimerEvent: {}
+[12.666783] (-) TimerEvent: {}
+[12.766999] (-) TimerEvent: {}
+[12.867186] (-) TimerEvent: {}
+[12.967510] (-) TimerEvent: {}
+[13.067735] (-) TimerEvent: {}
+[13.167903] (-) TimerEvent: {}
+[13.268140] (-) TimerEvent: {}
+[13.368474] (-) TimerEvent: {}
+[13.469014] (-) TimerEvent: {}
+[13.569195] (-) TimerEvent: {}
+[13.669451] (-) TimerEvent: {}
+[13.769974] (-) TimerEvent: {}
+[13.870149] (-) TimerEvent: {}
+[13.970715] (-) TimerEvent: {}
+[14.071249] (-) TimerEvent: {}
+[14.171494] (-) TimerEvent: {}
+[14.271704] (-) TimerEvent: {}
+[14.371886] (-) TimerEvent: {}
+[14.472071] (-) TimerEvent: {}
+[14.572232] (-) TimerEvent: {}
+[14.672413] (-) TimerEvent: {}
+[14.772634] (-) TimerEvent: {}
+[14.872828] (-) TimerEvent: {}
+[14.973047] (-) TimerEvent: {}
+[15.073267] (-) TimerEvent: {}
+[15.173468] (-) TimerEvent: {}
+[15.273642] (-) TimerEvent: {}
+[15.373987] (-) TimerEvent: {}
+[15.474177] (-) TimerEvent: {}
+[15.574430] (-) TimerEvent: {}
+[15.674701] (-) TimerEvent: {}
+[15.775031] (-) TimerEvent: {}
+[15.875820] (-) TimerEvent: {}
+[15.976047] (-) TimerEvent: {}
+[16.076216] (-) TimerEvent: {}
+[16.176473] (-) TimerEvent: {}
+[16.276665] (-) TimerEvent: {}
+[16.376914] (-) TimerEvent: {}
+[16.477148] (-) TimerEvent: {}
+[16.578051] (-) TimerEvent: {}
+[16.678203] (-) TimerEvent: {}
+[16.778381] (-) TimerEvent: {}
+[16.878578] (-) TimerEvent: {}
+[16.978783] (-) TimerEvent: {}
+[17.078978] (-) TimerEvent: {}
+[17.179247] (-) TimerEvent: {}
+[17.279545] (-) TimerEvent: {}
+[17.379894] (-) TimerEvent: {}
+[17.480092] (-) TimerEvent: {}
+[17.581207] (-) TimerEvent: {}
+[17.681465] (-) TimerEvent: {}
+[17.781650] (-) TimerEvent: {}
+[17.881945] (-) TimerEvent: {}
+[17.982146] (-) TimerEvent: {}
+[18.082372] (-) TimerEvent: {}
+[18.182606] (-) TimerEvent: {}
+[18.283240] (-) TimerEvent: {}
+[18.383402] (-) TimerEvent: {}
+[18.483623] (-) TimerEvent: {}
+[18.583867] (-) TimerEvent: {}
+[18.684205] (-) TimerEvent: {}
+[18.784393] (-) TimerEvent: {}
+[18.884568] (-) TimerEvent: {}
+[18.984796] (-) TimerEvent: {}
+[19.085059] (-) TimerEvent: {}
+[19.185306] (-) TimerEvent: {}
+[19.285555] (-) TimerEvent: {}
+[19.385953] (-) TimerEvent: {}
+[19.486804] (-) TimerEvent: {}
+[19.586974] (-) TimerEvent: {}
+[19.687138] (-) TimerEvent: {}
+[19.787452] (-) TimerEvent: {}
+[19.887701] (-) TimerEvent: {}
+[19.987901] (-) TimerEvent: {}
+[20.088104] (-) TimerEvent: {}
+[20.188351] (-) TimerEvent: {}
+[20.288488] (-) TimerEvent: {}
+[20.388782] (-) TimerEvent: {}
+[20.489210] (-) TimerEvent: {}
+[20.589920] (-) TimerEvent: {}
+[20.690357] (-) TimerEvent: {}
+[20.790517] (-) TimerEvent: {}
+[20.890833] (-) TimerEvent: {}
+[20.991094] (-) TimerEvent: {}
+[21.091359] (-) TimerEvent: {}
+[21.191523] (-) TimerEvent: {}
+[21.292016] (-) TimerEvent: {}
+[21.392730] (-) TimerEvent: {}
+[21.492963] (-) TimerEvent: {}
+[21.593358] (-) TimerEvent: {}
+[21.694256] (-) TimerEvent: {}
+[21.794431] (-) TimerEvent: {}
+[21.894590] (-) TimerEvent: {}
+[21.994745] (-) TimerEvent: {}
+[22.094914] (-) TimerEvent: {}
+[22.195173] (-) TimerEvent: {}
+[22.295379] (-) TimerEvent: {}
+[22.395616] (-) TimerEvent: {}
+[22.495882] (-) TimerEvent: {}
+[22.596064] (-) TimerEvent: {}
+[22.696473] (-) TimerEvent: {}
+[22.796654] (-) TimerEvent: {}
+[22.897039] (-) TimerEvent: {}
+[22.997223] (-) TimerEvent: {}
+[23.097406] (-) TimerEvent: {}
+[23.197591] (-) TimerEvent: {}
+[23.297802] (-) TimerEvent: {}
+[23.398095] (-) TimerEvent: {}
+[23.498358] (-) TimerEvent: {}
+[23.599392] (-) TimerEvent: {}
+[23.699597] (-) TimerEvent: {}
+[23.800054] (-) TimerEvent: {}
+[23.900231] (-) TimerEvent: {}
+[24.000475] (-) TimerEvent: {}
+[24.100786] (-) TimerEvent: {}
+[24.200999] (-) TimerEvent: {}
+[24.301211] (-) TimerEvent: {}
+[24.401604] (-) TimerEvent: {}
+[24.502444] (-) TimerEvent: {}
+[24.602688] (-) TimerEvent: {}
+[24.702893] (-) TimerEvent: {}
+[24.803255] (-) TimerEvent: {}
+[24.903449] (-) TimerEvent: {}
+[25.003714] (-) TimerEvent: {}
+[25.103931] (-) TimerEvent: {}
+[25.204212] (-) TimerEvent: {}
+[25.304390] (-) TimerEvent: {}
+[25.404567] (-) TimerEvent: {}
+[25.504756] (-) TimerEvent: {}
+[25.605441] (-) TimerEvent: {}
+[25.707337] (-) TimerEvent: {}
+[25.807489] (-) TimerEvent: {}
+[25.907653] (-) TimerEvent: {}
+[26.007864] (-) TimerEvent: {}
+[26.108096] (-) TimerEvent: {}
+[26.208322] (-) TimerEvent: {}
+[26.308527] (-) TimerEvent: {}
+[26.408702] (-) TimerEvent: {}
+[26.508879] (-) TimerEvent: {}
+[26.609047] (-) TimerEvent: {}
+[26.709214] (-) TimerEvent: {}
+[26.809381] (-) TimerEvent: {}
+[26.909563] (-) TimerEvent: {}
+[27.009783] (-) TimerEvent: {}
+[27.110013] (-) TimerEvent: {}
+[27.210708] (-) TimerEvent: {}
+[27.310863] (-) TimerEvent: {}
+[27.411082] (-) TimerEvent: {}
+[27.511406] (-) TimerEvent: {}
+[27.611603] (-) TimerEvent: {}
+[27.711790] (-) TimerEvent: {}
+[27.812117] (-) TimerEvent: {}
+[27.912314] (-) TimerEvent: {}
+[28.012537] (-) TimerEvent: {}
+[28.112702] (-) TimerEvent: {}
+[28.213216] (-) TimerEvent: {}
+[28.313653] (-) TimerEvent: {}
+[28.413918] (-) TimerEvent: {}
+[28.514715] (-) TimerEvent: {}
+[28.615091] (-) TimerEvent: {}
+[28.715333] (-) TimerEvent: {}
+[28.815523] (-) TimerEvent: {}
+[28.915758] (-) TimerEvent: {}
+[29.015971] (-) TimerEvent: {}
+[29.116213] (-) TimerEvent: {}
+[29.217036] (-) TimerEvent: {}
+[29.317216] (-) TimerEvent: {}
+[29.417440] (-) TimerEvent: {}
+[29.517696] (-) TimerEvent: {}
+[29.617872] (-) TimerEvent: {}
+[29.718085] (-) TimerEvent: {}
+[29.818353] (-) TimerEvent: {}
+[29.918524] (-) TimerEvent: {}
+[30.018907] (-) TimerEvent: {}
+[30.119185] (-) TimerEvent: {}
+[30.219508] (-) TimerEvent: {}
+[30.319892] (-) TimerEvent: {}
+[30.420184] (-) TimerEvent: {}
+[30.520682] (-) TimerEvent: {}
+[30.620946] (-) TimerEvent: {}
+[30.721452] (-) TimerEvent: {}
+[30.821642] (-) TimerEvent: {}
+[30.922065] (-) TimerEvent: {}
+[31.022206] (-) TimerEvent: {}
+[31.122542] (-) TimerEvent: {}
+[31.222748] (-) TimerEvent: {}
+[31.322984] (-) TimerEvent: {}
+[31.423382] (-) TimerEvent: {}
+[31.523577] (-) TimerEvent: {}
+[31.629544] (-) TimerEvent: {}
+[31.729791] (-) TimerEvent: {}
+[31.830205] (-) TimerEvent: {}
+[31.930422] (-) TimerEvent: {}
+[32.030616] (-) TimerEvent: {}
+[32.130821] (-) TimerEvent: {}
+[32.231003] (-) TimerEvent: {}
+[32.331471] (-) TimerEvent: {}
+[32.431694] (-) TimerEvent: {}
+[32.531881] (-) TimerEvent: {}
+[32.632199] (-) TimerEvent: {}
+[32.733922] (-) TimerEvent: {}
+[32.834079] (-) TimerEvent: {}
+[32.857402] (ican_example_mission) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/houshengao/ican_shoot/build/ican_example_mission/build', '--no-deps', 'symlink_data'], 'cwd': '/home/houshengao/ican_shoot/build/ican_example_mission', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CODEX_CI': '1', 'LANGUAGE': 'zh_CN:en', 'USER': 'houshengao', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ican_shoot_sim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/houshengao', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'zh_CN.UTF-8', 'LC_CTYPE': 'C.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1600', 'IM_CONFIG_CHECK_ENV': '1', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e64908b1ff6055fbd75361676a6eb184', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/opt/ican_shoot_sim', 'CODEX_PERMISSION_PROFILE': ':workspace', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'houshengao', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'houshengao', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/houshengao/.codex/packages/standalone/releases/0.146.0-x86_64-unknown-linux-musl/codex-path:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/home/houshengao/.codex/tmp/arg0/codex-arg0xkxm4u:/home/houshengao/.codex/packages/standalone/releases/0.146.0-x86_64-unknown-linux-musl/codex-path:/opt/ros/humble/bin:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/home/houshengao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/houshengao-virtual-machine:@/tmp/.ICE-unix/1600,unix/houshengao-virtual-machine:/tmp/.ICE-unix/1600', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a140bdc3_11d2_428c_aac0_47aee1789aea', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.C4R2S3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/houshengao/ican_shoot/install/ican_example_ring_aim:/home/houshengao/ican_shoot/install/ican_example_navigation:/opt/ican_shoot_sim:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019fc11b-c918-7090-94a7-300ec029eb96', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/houshengao/ican_shoot/build/ican_example_mission', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'fcitx', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e64908b1ff6055fbd75361676a6eb184', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/houshengao/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/houshengao/ican_shoot/build/ican_example_ring_aim:/home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/houshengao/ican_shoot/build/ican_example_navigation:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:/opt/ican_shoot_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/opt/ican_shoot_sim'}, 'shell': False}
+[32.934348] (-) TimerEvent: {}
+[33.034866] (-) TimerEvent: {}
+[33.135277] (-) TimerEvent: {}
+[33.140543] (ican_example_mission) StdoutLine: {'line': b'running develop\n'}
+[33.236637] (-) TimerEvent: {}
+[33.286734] (ican_example_mission) StdoutLine: {'line': b'running egg_info\n'}
+[33.286921] (ican_example_mission) StdoutLine: {'line': b'writing ican_example_mission.egg-info/PKG-INFO\n'}
+[33.286959] (ican_example_mission) StdoutLine: {'line': b'writing dependency_links to ican_example_mission.egg-info/dependency_links.txt\n'}
+[33.286991] (ican_example_mission) StdoutLine: {'line': b'writing entry points to ican_example_mission.egg-info/entry_points.txt\n'}
+[33.287366] (ican_example_mission) StdoutLine: {'line': b'writing requirements to ican_example_mission.egg-info/requires.txt\n'}
+[33.287476] (ican_example_mission) StdoutLine: {'line': b'writing top-level names to ican_example_mission.egg-info/top_level.txt\n'}
+[33.289779] (ican_example_mission) StdoutLine: {'line': b"reading manifest file 'ican_example_mission.egg-info/SOURCES.txt'\n"}
+[33.290096] (ican_example_mission) StdoutLine: {'line': b"writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'\n"}
+[33.294428] (ican_example_mission) StdoutLine: {'line': b'running build_ext\n'}
+[33.294552] (ican_example_mission) StdoutLine: {'line': b'Creating /home/houshengao/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican-example-mission.egg-link (link to .)\n'}
+[33.294589] (ican_example_mission) StdoutLine: {'line': b'Installing full_mission_node script to /home/houshengao/ican_shoot/install/ican_example_mission/lib/ican_example_mission\n'}
+[33.294621] (ican_example_mission) StdoutLine: {'line': b'Installing one_target_mission_node script to /home/houshengao/ican_shoot/install/ican_example_mission/lib/ican_example_mission\n'}
+[33.296080] (ican_example_mission) StdoutLine: {'line': b'\n'}
+[33.296164] (ican_example_mission) StdoutLine: {'line': b'Installed /home/houshengao/ican_shoot/build/ican_example_mission\n'}
+[33.296209] (ican_example_mission) StdoutLine: {'line': b'running symlink_data\n'}
+[33.328471] (ican_example_mission) CommandEnded: {'returncode': 0}
+[33.336942] (-) TimerEvent: {}
+[33.344434] (ican_example_mission) JobEnded: {'identifier': 'ican_example_mission', 'rc': 0}
+[33.345556] (-) EventReactorShutdown: {}

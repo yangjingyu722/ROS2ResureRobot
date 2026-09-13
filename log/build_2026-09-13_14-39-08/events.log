@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.001557] (-) JobUnselected: {'identifier': 'ican_example_mission'}
+[0.001625] (-) JobUnselected: {'identifier': 'ican_example_navigation'}
+[0.001648] (ican_example_ring_aim) JobQueued: {'identifier': 'ican_example_ring_aim', 'dependencies': OrderedDict()}
+[0.001670] (ican_referee_system) JobQueued: {'identifier': 'ican_referee_system', 'dependencies': OrderedDict()}
+[0.002220] (ican_example_ring_aim) JobStarted: {'identifier': 'ican_example_ring_aim'}
+[0.082183] (ican_referee_system) JobStarted: {'identifier': 'ican_referee_system'}
+[0.100349] (-) TimerEvent: {}
+[0.202077] (-) TimerEvent: {}
+[0.303209] (-) TimerEvent: {}
+[0.403837] (-) TimerEvent: {}
+[0.504444] (-) TimerEvent: {}
+[0.608098] (-) TimerEvent: {}
+[0.710056] (-) TimerEvent: {}
+[0.811826] (-) TimerEvent: {}
+[0.912520] (-) TimerEvent: {}
+[1.012949] (-) TimerEvent: {}
+[1.113960] (-) TimerEvent: {}
+[1.216459] (-) TimerEvent: {}
+[1.319754] (-) TimerEvent: {}
+[1.420504] (-) TimerEvent: {}
+[1.523167] (-) TimerEvent: {}
+[1.625198] (-) TimerEvent: {}
+[1.727129] (-) TimerEvent: {}
+[1.829469] (-) TimerEvent: {}
+[1.930326] (-) TimerEvent: {}
+[2.032613] (-) TimerEvent: {}
+[2.133780] (-) TimerEvent: {}
+[2.235552] (-) TimerEvent: {}
+[2.338664] (-) TimerEvent: {}
+[2.439186] (-) TimerEvent: {}
+[2.544038] (-) TimerEvent: {}
+[2.645100] (-) TimerEvent: {}
+[2.745878] (-) TimerEvent: {}
+[2.849471] (-) TimerEvent: {}
+[2.950374] (-) TimerEvent: {}
+[3.052493] (-) TimerEvent: {}
+[3.153580] (-) TimerEvent: {}
+[3.255275] (-) TimerEvent: {}
+[3.355947] (-) TimerEvent: {}
+[3.456546] (-) TimerEvent: {}
+[3.559469] (-) TimerEvent: {}
+[3.660493] (-) TimerEvent: {}
+[3.761320] (ican_referee_system) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHONIOENCODING': 'utf-8', 'ZAI_OAUTH_CLIENT_ID': 'client_P8X5CMWmlaRO9gyO-KSqtg', 'ZCODE_DESKTOP_CONTEXT_PROMPT_ENABLED': '1', 'USER': 'yjy', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yjy', 'CHROME_DESKTOP': 'zcode.desktop', 'OLDPWD': '/home/yjy/ican_shoot/ican_shoot', 'DESKTOP_SESSION': 'ubuntu', 'ZAI_OAUTH_ORIGIN': 'https://chat.z.ai', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/zcode.desktop', 'ZCODE_APP_VERSION': '3.11.2', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1542', 'LC_CTYPE': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '1714', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ZCODE_PROCESS_LABEL': 'local-1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3130', 'NVM_DIR': '/home/yjy/.nvm', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yjy', 'ZCODE_RUNTIME_ENV': 'production', 'JOURNAL_STREAM': '8:23703', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yjy', 'ZAI_BUSINESS_BASE_URL': 'https://api.z.ai', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/yjy/.local/bin:/home/yjy/.nvm/versions/node/v20.20.2/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/ZCode/resources/tools/bfs:/opt/ZCode/resources/tools/ripgrep:/opt/ZCode/resources/tools/ugrep', 'SESSION_MANAGER': 'local/yjy-virtual-machine:@/tmp/.ICE-unix/1679,unix/yjy-virtual-machine:/tmp/.ICE-unix/1679', 'INVOCATION_ID': '596fa7d9982c4f65bb8d0b3540000003', 'XDG_MENU_PREFIX': 'gnome-', 'ZCODE_BUILD_COMMIT_ID': '89817f5b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'ZCODE_BFS_BINARY': '/opt/ZCode/resources/tools/bfs/bfs', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.96RUV3', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'PYTHONUTF8': '1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ZCODE_CUA_GRAY_ENABLED': '0', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system', 'LC_ALL': 'en_US.UTF-8', 'ZCODE_BASE_URL': 'https://zcode.z.ai', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZCODE_RG_BINARY': '/opt/ZCode/resources/tools/ripgrep/rg', 'PYTHONPATH': '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'ZCODE_UGREP_BINARY': '/opt/ZCode/resources/tools/ugrep/ugrep', 'ZCODE_ENV': 'production', 'COLCON': '1'}, 'shell': False}
+[3.770419] (-) TimerEvent: {}
+[3.871720] (-) TimerEvent: {}
+[3.918000] (ican_example_ring_aim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHONIOENCODING': 'utf-8', 'ZAI_OAUTH_CLIENT_ID': 'client_P8X5CMWmlaRO9gyO-KSqtg', 'ZCODE_DESKTOP_CONTEXT_PROMPT_ENABLED': '1', 'USER': 'yjy', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yjy', 'CHROME_DESKTOP': 'zcode.desktop', 'OLDPWD': '/home/yjy/ican_shoot/ican_shoot', 'DESKTOP_SESSION': 'ubuntu', 'ZAI_OAUTH_ORIGIN': 'https://chat.z.ai', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/zcode.desktop', 'ZCODE_APP_VERSION': '3.11.2', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1542', 'LC_CTYPE': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '1714', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ZCODE_PROCESS_LABEL': 'local-1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3130', 'NVM_DIR': '/home/yjy/.nvm', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yjy', 'ZCODE_RUNTIME_ENV': 'production', 'JOURNAL_STREAM': '8:23703', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yjy', 'ZAI_BUSINESS_BASE_URL': 'https://api.z.ai', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/yjy/.local/bin:/home/yjy/.nvm/versions/node/v20.20.2/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/ZCode/resources/tools/bfs:/opt/ZCode/resources/tools/ripgrep:/opt/ZCode/resources/tools/ugrep', 'SESSION_MANAGER': 'local/yjy-virtual-machine:@/tmp/.ICE-unix/1679,unix/yjy-virtual-machine:/tmp/.ICE-unix/1679', 'INVOCATION_ID': '596fa7d9982c4f65bb8d0b3540000003', 'XDG_MENU_PREFIX': 'gnome-', 'ZCODE_BUILD_COMMIT_ID': '89817f5b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'ZCODE_BFS_BINARY': '/opt/ZCode/resources/tools/bfs/bfs', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.96RUV3', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'PYTHONUTF8': '1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ZCODE_CUA_GRAY_ENABLED': '0', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim', 'LC_ALL': 'en_US.UTF-8', 'ZCODE_BASE_URL': 'https://zcode.z.ai', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZCODE_RG_BINARY': '/opt/ZCode/resources/tools/ripgrep/rg', 'PYTHONPATH': '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'ZCODE_UGREP_BINARY': '/opt/ZCode/resources/tools/ugrep/ugrep', 'ZCODE_ENV': 'production', 'COLCON': '1'}, 'shell': False}
+[3.973988] (-) TimerEvent: {}
+[4.081227] (-) TimerEvent: {}
+[4.181751] (-) TimerEvent: {}
+[4.282366] (-) TimerEvent: {}
+[4.385038] (-) TimerEvent: {}
+[4.485877] (-) TimerEvent: {}
+[4.586549] (-) TimerEvent: {}
+[4.688846] (-) TimerEvent: {}
+[4.714339] (ican_referee_system) StdoutLine: {'line': b'running develop\n'}
+[4.789441] (-) TimerEvent: {}
+[4.891583] (-) TimerEvent: {}
+[4.946479] (ican_example_ring_aim) StdoutLine: {'line': b'running develop\n'}
+[4.992414] (-) TimerEvent: {}
+[5.095144] (-) TimerEvent: {}
+[5.196065] (-) TimerEvent: {}
+[5.297370] (-) TimerEvent: {}
+[5.351992] (ican_referee_system) StdoutLine: {'line': b'running egg_info\n'}
+[5.352227] (ican_referee_system) StdoutLine: {'line': b'writing ican_referee_system.egg-info/PKG-INFO\n'}
+[5.358217] (ican_referee_system) StdoutLine: {'line': b'writing dependency_links to ican_referee_system.egg-info/dependency_links.txt\n'}
+[5.358421] (ican_referee_system) StdoutLine: {'line': b'writing entry points to ican_referee_system.egg-info/entry_points.txt\n'}
+[5.358489] (ican_referee_system) StdoutLine: {'line': b'writing requirements to ican_referee_system.egg-info/requires.txt\n'}
+[5.358543] (ican_referee_system) StdoutLine: {'line': b'writing top-level names to ican_referee_system.egg-info/top_level.txt\n'}
+[5.362786] (ican_referee_system) StdoutLine: {'line': b"reading manifest file 'ican_referee_system.egg-info/SOURCES.txt'\n"}
+[5.366962] (ican_referee_system) StdoutLine: {'line': b"writing manifest file 'ican_referee_system.egg-info/SOURCES.txt'\n"}
+[5.376448] (ican_referee_system) StdoutLine: {'line': b'running build_ext\n'}
+[5.376641] (ican_referee_system) StdoutLine: {'line': b'Creating /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican-referee-system.egg-link (link to .)\n'}
+[5.376707] (ican_referee_system) StdoutLine: {'line': b'Installing referee_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/ican_referee_system\n'}
+[5.380808] (ican_referee_system) StdoutLine: {'line': b'\n'}
+[5.383437] (ican_referee_system) StdoutLine: {'line': b'Installed /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system\n'}
+[5.383786] (ican_referee_system) StdoutLine: {'line': b'running symlink_data\n'}
+[5.385765] (ican_referee_system) StdoutLine: {'line': b'symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/resource/ican_referee_system -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ament_index/resource_index/packages\n'}
+[5.387573] (ican_referee_system) StdoutLine: {'line': b'symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system\n'}
+[5.394753] (ican_referee_system) StdoutLine: {'line': b'symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/launch/referee.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/launch\n'}
+[5.399763] (-) TimerEvent: {}
+[5.502467] (-) TimerEvent: {}
+[5.522007] (ican_referee_system) CommandEnded: {'returncode': 0}
+[5.603099] (-) TimerEvent: {}
+[5.644937] (ican_referee_system) JobEnded: {'identifier': 'ican_referee_system', 'rc': 0}
+[5.646452] (ican_example_ring_aim) StdoutLine: {'line': b'running egg_info\n'}
+[5.646631] (ican_example_ring_aim) StdoutLine: {'line': b'writing ican_example_ring_aim.egg-info/PKG-INFO\n'}
+[5.646699] (ican_example_ring_aim) StdoutLine: {'line': b'writing dependency_links to ican_example_ring_aim.egg-info/dependency_links.txt\n'}
+[5.647001] (ican_example_ring_aim) StdoutLine: {'line': b'writing entry points to ican_example_ring_aim.egg-info/entry_points.txt\n'}
+[5.647079] (ican_example_ring_aim) StdoutLine: {'line': b'writing requirements to ican_example_ring_aim.egg-info/requires.txt\n'}
+[5.647138] (ican_example_ring_aim) StdoutLine: {'line': b'writing top-level names to ican_example_ring_aim.egg-info/top_level.txt\n'}
+[5.647191] (ican_example_ring_aim) StdoutLine: {'line': b"reading manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'\n"}
+[5.647239] (ican_example_ring_aim) StdoutLine: {'line': b"writing manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'\n"}
+[5.647283] (ican_example_ring_aim) StdoutLine: {'line': b'running build_ext\n'}
+[5.647330] (ican_example_ring_aim) StdoutLine: {'line': b'Creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican-example-ring-aim.egg-link (link to .)\n'}
+[5.647384] (ican_example_ring_aim) StdoutLine: {'line': b'Installing ring_aim_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim\n'}
+[5.647436] (ican_example_ring_aim) StdoutLine: {'line': b'\n'}
+[5.647488] (ican_example_ring_aim) StdoutLine: {'line': b'Installed /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim\n'}
+[5.647538] (ican_example_ring_aim) StdoutLine: {'line': b'running symlink_data\n'}
+[5.647586] (ican_example_ring_aim) StdoutLine: {'line': b'symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/resource/ican_example_ring_aim -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ament_index/resource_index/packages\n'}
+[5.647648] (ican_example_ring_aim) StdoutLine: {'line': b'symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim\n'}
+[5.647703] (ican_example_ring_aim) StdoutLine: {'line': b'symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/launch/ring_aim.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/launch\n'}
+[5.705970] (-) TimerEvent: {}
+[5.758953] (ican_example_ring_aim) CommandEnded: {'returncode': 0}
+[5.810024] (-) TimerEvent: {}
+[5.832651] (ican_example_ring_aim) JobEnded: {'identifier': 'ican_example_ring_aim', 'rc': 0}
+[5.835025] (-) EventReactorShutdown: {}

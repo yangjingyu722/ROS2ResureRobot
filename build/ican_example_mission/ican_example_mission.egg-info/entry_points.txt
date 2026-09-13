@@ -1,0 +1,4 @@
+[console_scripts]
+full_mission_node = ican_example_mission.full_mission_node:main
+one_target_mission_node = ican_example_mission.one_target_mission_node:main
+

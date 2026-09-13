@@ -1,0 +1,3 @@
+[console_scripts]
+ring_aim_node = ican_example_ring_aim.ring_aim_node:main
+

@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating ican_example_ring_aim.egg-info
+writing ican_example_ring_aim.egg-info/PKG-INFO
+writing dependency_links to ican_example_ring_aim.egg-info/dependency_links.txt
+writing entry points to ican_example_ring_aim.egg-info/entry_points.txt
+writing requirements to ican_example_ring_aim.egg-info/requires.txt
+writing top-level names to ican_example_ring_aim.egg-info/top_level.txt
+writing manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'
+reading manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'
+writing manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican-example-ring-aim.egg-link (link to .)
+Installing ring_aim_node script to /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim
+
+Installed /home/leea/Ican_sim/ican_shoot/build/ican_example_ring_aim
+running symlink_data
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/share/ament_index
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/share/ament_index/resource_index
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/share/ament_index/resource_index/packages
+symbolically linking /home/leea/Ican_sim/ican_shoot/build/ican_example_ring_aim/resource/ican_example_ring_aim -> /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/share/ament_index/resource_index/packages
+symbolically linking /home/leea/Ican_sim/ican_shoot/build/ican_example_ring_aim/package.xml -> /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/launch
+symbolically linking /home/leea/Ican_sim/ican_shoot/build/ican_example_ring_aim/launch/ring_aim.launch.py -> /home/leea/Ican_sim/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/launch

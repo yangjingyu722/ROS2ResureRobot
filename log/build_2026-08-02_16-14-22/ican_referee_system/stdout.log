@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing ican_referee_system.egg-info/PKG-INFO
+writing dependency_links to ican_referee_system.egg-info/dependency_links.txt
+writing entry points to ican_referee_system.egg-info/entry_points.txt
+writing requirements to ican_referee_system.egg-info/requires.txt
+writing top-level names to ican_referee_system.egg-info/top_level.txt
+reading manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+writing manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/houshengao/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican-referee-system.egg-link (link to .)
+Installing referee_node script to /home/houshengao/ican_shoot/install/ican_referee_system/lib/ican_referee_system
+
+Installed /home/houshengao/ican_shoot/build/ican_referee_system
+running symlink_data
+symbolically linking /home/houshengao/ican_shoot/build/ican_referee_system/resource/ican_referee_system -> /home/houshengao/ican_shoot/install/ican_referee_system/share/ament_index/resource_index/packages

@@ -1,0 +1,17 @@
+[2.831s] Invoking command in '/home/houshengao/ican_shoot/build/ican_example_navigation': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data
+[3.184s] running develop
+[3.292s] running egg_info
+[3.292s] writing ican_example_navigation.egg-info/PKG-INFO
+[3.296s] writing dependency_links to ican_example_navigation.egg-info/dependency_links.txt
+[3.296s] writing entry points to ican_example_navigation.egg-info/entry_points.txt
+[3.297s] writing requirements to ican_example_navigation.egg-info/requires.txt
+[3.297s] writing top-level names to ican_example_navigation.egg-info/top_level.txt
+[3.297s] reading manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+[3.297s] writing manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+[3.298s] running build_ext
+[3.298s] Creating /home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican-example-navigation.egg-link (link to .)
+[3.300s] Installing initial_pose_publisher script to /home/houshengao/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation
+[3.300s] 
+[3.300s] Installed /home/houshengao/ican_shoot/build/ican_example_navigation
+[3.300s] running symlink_data
+[3.330s] Invoked command in '/home/houshengao/ican_shoot/build/ican_example_navigation' returned '0': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data

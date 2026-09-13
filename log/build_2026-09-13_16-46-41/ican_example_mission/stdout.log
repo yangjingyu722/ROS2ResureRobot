@@ -1,0 +1,33 @@
+running develop
+Removing /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican-example-mission.egg-link (link to .)
+running egg_info
+writing ../../build/ican_example_mission/ican_example_mission.egg-info/PKG-INFO
+writing dependency_links to ../../build/ican_example_mission/ican_example_mission.egg-info/dependency_links.txt
+writing entry points to ../../build/ican_example_mission/ican_example_mission.egg-info/entry_points.txt
+writing requirements to ../../build/ican_example_mission/ican_example_mission.egg-info/requires.txt
+writing top-level names to ../../build/ican_example_mission/ican_example_mission.egg-info/top_level.txt
+reading manifest file '../../build/ican_example_mission/ican_example_mission.egg-info/SOURCES.txt'
+writing manifest file '../../build/ican_example_mission/ican_example_mission.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ican_example_mission/full_mission_node.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build/lib/ican_example_mission
+running install
+running install_lib
+creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build/lib/ican_example_mission/__init__.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build/lib/ican_example_mission/full_mission_node.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build/lib/ican_example_mission/one_target_mission_node.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission/full_mission_node.py to full_mission_node.cpython-310.pyc
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission/one_target_mission_node.py to one_target_mission_node.cpython-310.pyc
+running install_data
+copying resource/ican_example_mission -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ament_index/resource_index/packages
+copying package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission
+copying launch/one_target_demo.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch
+copying launch/full_mission.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch
+running install_egg_info
+Copying ../../build/ican_example_mission/ican_example_mission.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission-0.1.0-py3.10.egg-info
+running install_scripts
+Installing full_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+Installing one_target_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/install.log'

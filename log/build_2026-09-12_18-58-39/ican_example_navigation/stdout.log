@@ -1,0 +1,35 @@
+running egg_info
+writing ../../build/ican_example_navigation/ican_example_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/ican_example_navigation/ican_example_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/ican_example_navigation/ican_example_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/ican_example_navigation/ican_example_navigation.egg-info/requires.txt
+writing top-level names to ../../build/ican_example_navigation/ican_example_navigation.egg-info/top_level.txt
+reading manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build
+creating /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib
+creating /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation
+copying ican_example_navigation/__init__.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation
+copying ican_example_navigation/initial_pose_publisher.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation
+running install
+running install_lib
+creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation/__init__.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation/initial_pose_publisher.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation/initial_pose_publisher.py to initial_pose_publisher.cpython-310.pyc
+running install_data
+copying resource/ican_example_navigation -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation
+copying launch/navigation.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/launch
+copying maps/land_shoot_map.pgm -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+copying maps/land_shoot_map.yaml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+copying config/nav2_params.yaml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/config
+copying rviz/example_nav.rviz -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/rviz
+running install_egg_info
+Copying ../../build/ican_example_navigation/ican_example_navigation.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation-0.1.0-py3.10.egg-info
+running install_scripts
+Installing initial_pose_publisher script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation
+writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/install.log'

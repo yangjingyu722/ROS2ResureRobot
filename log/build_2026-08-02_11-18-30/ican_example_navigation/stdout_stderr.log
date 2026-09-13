@@ -1,0 +1,31 @@
+running develop
+running egg_info
+creating ican_example_navigation.egg-info
+writing ican_example_navigation.egg-info/PKG-INFO
+writing dependency_links to ican_example_navigation.egg-info/dependency_links.txt
+writing entry points to ican_example_navigation.egg-info/entry_points.txt
+writing requirements to ican_example_navigation.egg-info/requires.txt
+writing top-level names to ican_example_navigation.egg-info/top_level.txt
+writing manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+reading manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+writing manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican-example-navigation.egg-link (link to .)
+Installing initial_pose_publisher script to /home/houshengao/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation
+
+Installed /home/houshengao/ican_shoot/build/ican_example_navigation
+running symlink_data
+creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index
+creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index
+creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/resource/ican_example_navigation -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/package.xml -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation
+creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/launch
+symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/launch/navigation.launch.py -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/launch
+creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/maps/land_shoot_map.yaml -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/maps/land_shoot_map.pgm -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/config
+symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/config/nav2_params.yaml -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/config
+creating /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/rviz
+symbolically linking /home/houshengao/ican_shoot/build/ican_example_navigation/rviz/example_nav.rviz -> /home/houshengao/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/rviz

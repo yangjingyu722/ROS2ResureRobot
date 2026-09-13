@@ -1,0 +1,31 @@
+running egg_info
+writing ../../build/ican_referee_system/ican_referee_system.egg-info/PKG-INFO
+writing dependency_links to ../../build/ican_referee_system/ican_referee_system.egg-info/dependency_links.txt
+writing entry points to ../../build/ican_referee_system/ican_referee_system.egg-info/entry_points.txt
+writing requirements to ../../build/ican_referee_system/ican_referee_system.egg-info/requires.txt
+writing top-level names to ../../build/ican_referee_system/ican_referee_system.egg-info/top_level.txt
+reading manifest file '../../build/ican_referee_system/ican_referee_system.egg-info/SOURCES.txt'
+writing manifest file '../../build/ican_referee_system/ican_referee_system.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build
+creating /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib
+creating /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system
+copying ican_referee_system/__init__.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system
+copying ican_referee_system/referee_node.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system
+running install
+running install_lib
+creating /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system/__init__.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system/referee_node.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system/referee_node.py to referee_node.cpython-310.pyc
+running install_data
+copying resource/ican_referee_system -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ament_index/resource_index/packages
+copying package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system
+copying launch/referee.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/launch
+running install_egg_info
+Copying ../../build/ican_referee_system/ican_referee_system.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system-0.2.0-py3.10.egg-info
+running install_scripts
+Installing referee_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/ican_referee_system
+writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/install.log'

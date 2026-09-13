@@ -1,0 +1,33 @@
+[2.253s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/src/ican_referee_system': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_referee_system build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/install.log --install-scripts $base/lib/ican_referee_system --single-version-externally-managed install_data
+[2.692s] running egg_info
+[2.694s] writing ../../build/ican_referee_system/ican_referee_system.egg-info/PKG-INFO
+[2.694s] writing dependency_links to ../../build/ican_referee_system/ican_referee_system.egg-info/dependency_links.txt
+[2.696s] writing entry points to ../../build/ican_referee_system/ican_referee_system.egg-info/entry_points.txt
+[2.696s] writing requirements to ../../build/ican_referee_system/ican_referee_system.egg-info/requires.txt
+[2.696s] writing top-level names to ../../build/ican_referee_system/ican_referee_system.egg-info/top_level.txt
+[2.700s] reading manifest file '../../build/ican_referee_system/ican_referee_system.egg-info/SOURCES.txt'
+[2.702s] writing manifest file '../../build/ican_referee_system/ican_referee_system.egg-info/SOURCES.txt'
+[2.704s] running build
+[2.705s] running build_py
+[2.705s] creating /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build
+[2.705s] creating /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib
+[2.705s] creating /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system
+[2.705s] copying ican_referee_system/__init__.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system
+[2.705s] copying ican_referee_system/referee_node.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system
+[2.706s] running install
+[2.706s] running install_lib
+[2.708s] creating /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system
+[2.708s] copying /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system/__init__.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system
+[2.708s] copying /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build/lib/ican_referee_system/referee_node.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system
+[2.711s] byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system/__init__.py to __init__.cpython-310.pyc
+[2.716s] byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system/referee_node.py to referee_node.cpython-310.pyc
+[2.735s] running install_data
+[2.736s] copying resource/ican_referee_system -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ament_index/resource_index/packages
+[2.736s] copying package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system
+[2.736s] copying launch/referee.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/launch
+[2.736s] running install_egg_info
+[2.740s] Copying ../../build/ican_referee_system/ican_referee_system.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system-0.2.0-py3.10.egg-info
+[2.743s] running install_scripts
+[2.818s] Installing referee_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/ican_referee_system
+[2.819s] writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/install.log'
+[2.869s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/src/ican_referee_system' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_referee_system build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/install.log --install-scripts $base/lib/ican_referee_system --single-version-externally-managed install_data

@@ -1,0 +1,26 @@
+[0.831s] Invoking command in '/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission': AMENT_PREFIX_PATH=/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_ring_aim:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/lib/python3.10/site-packages:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_ring_aim:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_navigation:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission/build --no-deps symlink_data
+[1.065s] running develop
+[1.202s] running egg_info
+[1.202s] creating ican_example_mission.egg-info
+[1.202s] writing ican_example_mission.egg-info/PKG-INFO
+[1.202s] writing dependency_links to ican_example_mission.egg-info/dependency_links.txt
+[1.202s] writing entry points to ican_example_mission.egg-info/entry_points.txt
+[1.202s] writing requirements to ican_example_mission.egg-info/requires.txt
+[1.203s] writing top-level names to ican_example_mission.egg-info/top_level.txt
+[1.203s] writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+[1.203s] reading manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+[1.204s] writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+[1.206s] running build_ext
+[1.206s] Creating /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/lib/python3.10/site-packages/ican-example-mission.egg-link (link to .)
+[1.207s] Installing one_target_mission_node script to /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/lib/ican_example_mission
+[1.207s] 
+[1.208s] Installed /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission
+[1.208s] running symlink_data
+[1.208s] creating /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/share/ament_index
+[1.208s] creating /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/share/ament_index/resource_index
+[1.208s] creating /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/share/ament_index/resource_index/packages
+[1.208s] symbolically linking /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission/resource/ican_example_mission -> /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/share/ament_index/resource_index/packages
+[1.208s] symbolically linking /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission/package.xml -> /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/share/ican_example_mission
+[1.208s] creating /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/share/ican_example_mission/launch
+[1.208s] symbolically linking /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission/launch/one_target_demo.launch.py -> /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/share/ican_example_mission/launch
+[1.246s] Invoked command in '/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission' returned '0': AMENT_PREFIX_PATH=/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_ring_aim:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_mission/lib/python3.10/site-packages:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_ring_aim:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_navigation:/home/leea/Ican_sim/ican_shoot_user_workspace_example_only/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leea/Ican_sim/ican_shoot_user_workspace_example_only/build/ican_example_mission/build --no-deps symlink_data

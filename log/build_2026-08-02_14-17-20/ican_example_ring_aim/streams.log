@@ -1,0 +1,17 @@
+[1.666s] Invoking command in '/home/houshengao/ican_shoot/build/ican_example_ring_aim': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_ring_aim/build --no-deps symlink_data
+[2.160s] running develop
+[2.503s] running egg_info
+[2.503s] writing ican_example_ring_aim.egg-info/PKG-INFO
+[2.507s] writing dependency_links to ican_example_ring_aim.egg-info/dependency_links.txt
+[2.509s] writing entry points to ican_example_ring_aim.egg-info/entry_points.txt
+[2.512s] writing requirements to ican_example_ring_aim.egg-info/requires.txt
+[2.513s] writing top-level names to ican_example_ring_aim.egg-info/top_level.txt
+[2.519s] reading manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'
+[2.524s] writing manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'
+[2.525s] running build_ext
+[2.525s] Creating /home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican-example-ring-aim.egg-link (link to .)
+[2.527s] Installing ring_aim_node script to /home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim
+[2.527s] 
+[2.527s] Installed /home/houshengao/ican_shoot/build/ican_example_ring_aim
+[2.528s] running symlink_data
+[2.727s] Invoked command in '/home/houshengao/ican_shoot/build/ican_example_ring_aim' returned '0': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_ring_aim/build --no-deps symlink_data

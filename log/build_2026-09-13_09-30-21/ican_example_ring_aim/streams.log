@@ -1,0 +1,21 @@
+[1.950s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_ring_aim': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_example_ring_aim build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/install.log --install-scripts $base/lib/ican_example_ring_aim --single-version-externally-managed install_data
+[2.340s] running egg_info
+[2.341s] writing ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/PKG-INFO
+[2.363s] writing dependency_links to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/dependency_links.txt
+[2.364s] writing entry points to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/entry_points.txt
+[2.365s] writing requirements to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/requires.txt
+[2.365s] writing top-level names to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/top_level.txt
+[2.370s] reading manifest file '../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/SOURCES.txt'
+[2.373s] writing manifest file '../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/SOURCES.txt'
+[2.373s] running build
+[2.374s] running build_py
+[2.378s] running install
+[2.378s] running install_lib
+[2.381s] running install_data
+[2.382s] running install_egg_info
+[2.386s] removing '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim-0.1.0-py3.10.egg-info' (and everything under it)
+[2.386s] Copying ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim-0.1.0-py3.10.egg-info
+[2.389s] running install_scripts
+[2.430s] Installing ring_aim_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim
+[2.431s] writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/install.log'
+[2.488s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_ring_aim' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_example_ring_aim build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/install.log --install-scripts $base/lib/ican_example_ring_aim --single-version-externally-managed install_data

@@ -1,0 +1,22 @@
+[1.969s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build --no-deps symlink_data --force
+[2.566s] running develop
+[2.899s] running egg_info
+[2.901s] writing ican_example_mission.egg-info/PKG-INFO
+[2.903s] writing dependency_links to ican_example_mission.egg-info/dependency_links.txt
+[2.903s] writing entry points to ican_example_mission.egg-info/entry_points.txt
+[2.904s] writing requirements to ican_example_mission.egg-info/requires.txt
+[2.905s] writing top-level names to ican_example_mission.egg-info/top_level.txt
+[2.911s] reading manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+[2.915s] writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+[2.922s] running build_ext
+[2.922s] Creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican-example-mission.egg-link (link to .)
+[2.923s] Installing full_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+[2.925s] Installing one_target_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+[2.927s] 
+[2.927s] Installed /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission
+[2.927s] running symlink_data
+[2.928s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/resource/ican_example_mission -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ament_index/resource_index/packages
+[2.928s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission
+[2.928s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/launch/one_target_demo.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch
+[2.928s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/launch/full_mission.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch
+[3.012s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build --no-deps symlink_data --force

@@ -1,0 +1,3 @@
+[console_scripts]
+initial_pose_publisher = ican_example_navigation.initial_pose_publisher:main
+

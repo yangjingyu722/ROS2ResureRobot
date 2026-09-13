@@ -1,0 +1,17 @@
+[90.096s] Invoking command in '/home/houshengao/ican_shoot/build/ican_referee_system': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_referee_system/build --no-deps symlink_data
+[90.323s] running develop
+[90.455s] running egg_info
+[90.456s] writing ican_referee_system.egg-info/PKG-INFO
+[90.456s] writing dependency_links to ican_referee_system.egg-info/dependency_links.txt
+[90.457s] writing entry points to ican_referee_system.egg-info/entry_points.txt
+[90.457s] writing requirements to ican_referee_system.egg-info/requires.txt
+[90.457s] writing top-level names to ican_referee_system.egg-info/top_level.txt
+[90.460s] reading manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+[90.461s] writing manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+[90.463s] running build_ext
+[90.465s] Creating /home/houshengao/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican-referee-system.egg-link (link to .)
+[90.465s] Installing referee_node script to /home/houshengao/ican_shoot/install/ican_referee_system/lib/ican_referee_system
+[90.465s] 
+[90.466s] Installed /home/houshengao/ican_shoot/build/ican_referee_system
+[90.466s] running symlink_data
+[90.495s] Invoked command in '/home/houshengao/ican_shoot/build/ican_referee_system' returned '0': PYTHONPATH=/home/houshengao/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_referee_system/build --no-deps symlink_data

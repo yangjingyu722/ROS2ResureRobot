@@ -1,0 +1,6 @@
+source;share/ican_referee_system/hook/pythonpath.ps1
+source;share/ican_referee_system/hook/pythonpath.dsv
+source;share/ican_referee_system/hook/pythonpath.sh
+source;share/ican_referee_system/hook/ament_prefix_path.ps1
+source;share/ican_referee_system/hook/ament_prefix_path.dsv
+source;share/ican_referee_system/hook/ament_prefix_path.sh

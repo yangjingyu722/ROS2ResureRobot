@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/ican_referee_system/ican_referee_system.egg-info/PKG-INFO
+writing dependency_links to ../../build/ican_referee_system/ican_referee_system.egg-info/dependency_links.txt
+writing entry points to ../../build/ican_referee_system/ican_referee_system.egg-info/entry_points.txt
+writing requirements to ../../build/ican_referee_system/ican_referee_system.egg-info/requires.txt
+writing top-level names to ../../build/ican_referee_system/ican_referee_system.egg-info/top_level.txt
+reading manifest file '../../build/ican_referee_system/ican_referee_system.egg-info/SOURCES.txt'
+writing manifest file '../../build/ican_referee_system/ican_referee_system.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system-0.2.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/ican_referee_system/ican_referee_system.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican_referee_system-0.2.0-py3.10.egg-info
+running install_scripts
+Installing referee_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/ican_referee_system
+writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/install.log'

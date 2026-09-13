@@ -1,0 +1,29 @@
+running develop
+Removing /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican-example-ring-aim.egg-link (link to .)
+running egg_info
+writing ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/PKG-INFO
+writing dependency_links to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/dependency_links.txt
+writing entry points to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/entry_points.txt
+writing requirements to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/requires.txt
+writing top-level names to ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/top_level.txt
+reading manifest file '../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/SOURCES.txt'
+writing manifest file '../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ican_example_ring_aim/ring_aim_node.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build/lib/ican_example_ring_aim
+running install
+running install_lib
+creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build/lib/ican_example_ring_aim/__init__.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim
+copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build/lib/ican_example_ring_aim/ring_aim_node.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim/ring_aim_node.py to ring_aim_node.cpython-310.pyc
+running install_data
+copying resource/ican_example_ring_aim -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ament_index/resource_index/packages
+copying package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim
+copying launch/ring_aim.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/launch
+running install_egg_info
+Copying ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican_example_ring_aim-0.1.0-py3.10.egg-info
+running install_scripts
+Installing ring_aim_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim
+writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/install.log'

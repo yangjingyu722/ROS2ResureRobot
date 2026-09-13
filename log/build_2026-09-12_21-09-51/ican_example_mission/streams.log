@@ -1,0 +1,22 @@
+[1.298s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_mission': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_example_mission build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/install.log --install-scripts $base/lib/ican_example_mission --single-version-externally-managed install_data
+[1.749s] running egg_info
+[1.751s] writing ../../build/ican_example_mission/ican_example_mission.egg-info/PKG-INFO
+[1.751s] writing dependency_links to ../../build/ican_example_mission/ican_example_mission.egg-info/dependency_links.txt
+[1.751s] writing entry points to ../../build/ican_example_mission/ican_example_mission.egg-info/entry_points.txt
+[1.755s] writing requirements to ../../build/ican_example_mission/ican_example_mission.egg-info/requires.txt
+[1.755s] writing top-level names to ../../build/ican_example_mission/ican_example_mission.egg-info/top_level.txt
+[1.756s] reading manifest file '../../build/ican_example_mission/ican_example_mission.egg-info/SOURCES.txt'
+[1.758s] writing manifest file '../../build/ican_example_mission/ican_example_mission.egg-info/SOURCES.txt'
+[1.759s] running build
+[1.759s] running build_py
+[1.760s] running install
+[1.761s] running install_lib
+[1.765s] running install_data
+[1.768s] running install_egg_info
+[1.772s] removing '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission-0.1.0-py3.10.egg-info' (and everything under it)
+[1.773s] Copying ../../build/ican_example_mission/ican_example_mission.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican_example_mission-0.1.0-py3.10.egg-info
+[1.776s] running install_scripts
+[1.821s] Installing full_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+[1.822s] Installing one_target_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+[1.822s] writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/install.log'
+[1.893s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_mission' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_example_mission build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/install.log --install-scripts $base/lib/ican_example_mission --single-version-externally-managed install_data

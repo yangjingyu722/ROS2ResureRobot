@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating ican_example_mission.egg-info
+writing ican_example_mission.egg-info/PKG-INFO
+writing dependency_links to ican_example_mission.egg-info/dependency_links.txt
+writing entry points to ican_example_mission.egg-info/entry_points.txt
+writing requirements to ican_example_mission.egg-info/requires.txt
+writing top-level names to ican_example_mission.egg-info/top_level.txt
+writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+reading manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican-example-mission.egg-link (link to .)
+Installing one_target_mission_node script to /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+
+Installed /home/leea/Ican_sim/ican_shoot/build/ican_example_mission
+running symlink_data
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/share/ament_index
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/share/ament_index/resource_index
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/share/ament_index/resource_index/packages
+symbolically linking /home/leea/Ican_sim/ican_shoot/build/ican_example_mission/resource/ican_example_mission -> /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/share/ament_index/resource_index/packages
+symbolically linking /home/leea/Ican_sim/ican_shoot/build/ican_example_mission/package.xml -> /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/share/ican_example_mission
+creating /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch
+symbolically linking /home/leea/Ican_sim/ican_shoot/build/ican_example_mission/launch/one_target_demo.launch.py -> /home/leea/Ican_sim/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch

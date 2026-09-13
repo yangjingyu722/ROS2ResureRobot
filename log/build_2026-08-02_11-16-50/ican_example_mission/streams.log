@@ -1,0 +1,17 @@
+[60.065s] Invoking command in '/home/houshengao/ican_shoot/build/ican_example_mission': AMENT_PREFIX_PATH=/home/houshengao/ican_shoot/install/ican_example_ring_aim:/home/houshengao/ican_shoot/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/houshengao/ican_shoot/build/ican_example_ring_aim:/home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/houshengao/ican_shoot/build/ican_example_navigation:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_mission/build --no-deps symlink_data
+[60.269s] running develop
+[60.376s] running egg_info
+[60.377s] writing ican_example_mission.egg-info/PKG-INFO
+[60.377s] writing dependency_links to ican_example_mission.egg-info/dependency_links.txt
+[60.378s] writing entry points to ican_example_mission.egg-info/entry_points.txt
+[60.378s] writing requirements to ican_example_mission.egg-info/requires.txt
+[60.378s] writing top-level names to ican_example_mission.egg-info/top_level.txt
+[60.382s] reading manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+[60.382s] writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'
+[60.384s] running build_ext
+[60.384s] Creating /home/houshengao/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican-example-mission.egg-link (link to .)
+[60.385s] Installing one_target_mission_node script to /home/houshengao/ican_shoot/install/ican_example_mission/lib/ican_example_mission
+[60.386s] 
+[60.386s] Installed /home/houshengao/ican_shoot/build/ican_example_mission
+[60.387s] running symlink_data
+[60.410s] Invoked command in '/home/houshengao/ican_shoot/build/ican_example_mission' returned '0': AMENT_PREFIX_PATH=/home/houshengao/ican_shoot/install/ican_example_ring_aim:/home/houshengao/ican_shoot/install/ican_example_navigation:${AMENT_PREFIX_PATH} PYTHONPATH=/home/houshengao/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houshengao/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/houshengao/ican_shoot/build/ican_example_ring_aim:/home/houshengao/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/home/houshengao/ican_shoot/build/ican_example_navigation:/home/houshengao/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/houshengao/ican_shoot/build/ican_example_mission/build --no-deps symlink_data
