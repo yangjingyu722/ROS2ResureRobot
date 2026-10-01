@@ -1,0 +1,20 @@
+[1.329s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build --no-deps symlink_data --force
+[1.606s] running develop
+[1.731s] running egg_info
+[1.731s] writing ican_example_ring_aim.egg-info/PKG-INFO
+[1.734s] writing dependency_links to ican_example_ring_aim.egg-info/dependency_links.txt
+[1.734s] writing entry points to ican_example_ring_aim.egg-info/entry_points.txt
+[1.734s] writing requirements to ican_example_ring_aim.egg-info/requires.txt
+[1.734s] writing top-level names to ican_example_ring_aim.egg-info/top_level.txt
+[1.738s] reading manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'
+[1.742s] writing manifest file 'ican_example_ring_aim.egg-info/SOURCES.txt'
+[1.742s] running build_ext
+[1.742s] Creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages/ican-example-ring-aim.egg-link (link to .)
+[1.744s] Installing ring_aim_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim
+[1.744s] 
+[1.744s] Installed /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim
+[1.744s] running symlink_data
+[1.745s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/resource/ican_example_ring_aim -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ament_index/resource_index/packages
+[1.745s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim
+[1.746s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/launch/ring_aim.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/launch
+[1.804s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build --no-deps symlink_data --force

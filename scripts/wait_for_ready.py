@@ -98,24 +98,30 @@ def wait_for_clock(node, executor, timeout, stable_seconds):
     print(f"[就绪] Gazebo /clock 已稳定（{node.clock_value:.2f}s）", flush=True)
 
 
-def get_lifecycle_state(executor, client):
-    if not client.service_is_ready():
-        return None
-    future = client.call_async(GetState.Request())
+def query_lifecycle_states(executor, clients):
+    """Query all lifecycle services concurrently; missing/slow ones report as None."""
+    futures = {}
+    for name, client in clients.items():
+        if client.service_is_ready():
+            futures[name] = client.call_async(GetState.Request())
     deadline = time.monotonic() + 1.0
-    while rclpy.ok() and not future.done() and time.monotonic() < deadline:
+    pending = dict(futures)
+    while pending and rclpy.ok() and time.monotonic() < deadline:
         executor.spin_once(timeout_sec=0.05)
-    if not future.done() or future.exception() is not None:
-        return None
-    return future.result().current_state.label
+        pending = {name: fut for name, fut in pending.items() if not fut.done()}
+    states = {}
+    for name, client in clients.items():
+        future = futures.get(name)
+        if future is None or not future.done() or future.exception() is not None:
+            states[name] = None
+        else:
+            states[name] = future.result().current_state.label
+    return states
 
 
 def wait_for_nav2(node, executor, timeout):
     def predicate():
-        states = {
-            name: get_lifecycle_state(executor, client)
-            for name, client in node.lifecycle_clients.items()
-        }
+        states = query_lifecycle_states(executor, node.lifecycle_clients)
         inactive = [f"{name}={state or '未发现'}" for name, state in states.items() if state != "active"]
         server_count = node.action_server_count()
         action_ready = node.nav_client.server_is_ready()

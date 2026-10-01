@@ -74,7 +74,7 @@ class FullMissionNode(Node):
         self.declare_parameter("task_3_right_offset_m", 0.02)
         self.declare_parameter("task_4_right_offset_m", 0.04)
         self.declare_parameter("aim_timeout_sec", 15.0)
-        self.declare_parameter("wheel_aim_timeout_sec", 24.0)
+        self.declare_parameter("wheel_aim_timeout_sec", 30.0)
         self.declare_parameter("aim_detection_max_age_sec", 0.8)
         self.declare_parameter("shot_settle_sec", 1.0)
         self.declare_parameter("ring_center_tolerance_px", 20.0)

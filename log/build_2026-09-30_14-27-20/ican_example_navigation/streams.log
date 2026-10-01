@@ -1,0 +1,24 @@
+[1.751s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_navigation': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_example_navigation build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/install.log --install-scripts $base/lib/ican_example_navigation --single-version-externally-managed install_data
+[2.142s] running egg_info
+[2.146s] writing ../../build/ican_example_navigation/ican_example_navigation.egg-info/PKG-INFO
+[2.147s] writing dependency_links to ../../build/ican_example_navigation/ican_example_navigation.egg-info/dependency_links.txt
+[2.147s] writing entry points to ../../build/ican_example_navigation/ican_example_navigation.egg-info/entry_points.txt
+[2.147s] writing requirements to ../../build/ican_example_navigation/ican_example_navigation.egg-info/requires.txt
+[2.147s] writing top-level names to ../../build/ican_example_navigation/ican_example_navigation.egg-info/top_level.txt
+[2.159s] reading manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'
+[2.165s] writing manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'
+[2.165s] running build
+[2.165s] running build_py
+[2.165s] copying ican_example_navigation/initial_pose_publisher.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation
+[2.165s] running install
+[2.165s] running install_lib
+[2.168s] copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation/initial_pose_publisher.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation
+[2.168s] byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation/initial_pose_publisher.py to initial_pose_publisher.cpython-310.pyc
+[2.171s] running install_data
+[2.172s] running install_egg_info
+[2.181s] removing '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation-0.1.0-py3.10.egg-info' (and everything under it)
+[2.182s] Copying ../../build/ican_example_navigation/ican_example_navigation.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation-0.1.0-py3.10.egg-info
+[2.191s] running install_scripts
+[2.229s] Installing initial_pose_publisher script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation
+[2.230s] writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/install.log'
+[2.403s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_navigation' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ican_example_navigation build --build-base /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build install --record /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/install.log --install-scripts $base/lib/ican_example_navigation --single-version-externally-managed install_data

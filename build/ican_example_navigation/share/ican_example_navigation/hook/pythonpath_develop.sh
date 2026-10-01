@@ -1,3 +1,3 @@
 # generated from colcon_core/shell/template/hook_prepend_value.sh.em
 
-_colcon_prepend_unique_value PYTHONPATH "/home/houshengao/ican_shoot/build/ican_example_navigation"
+_colcon_prepend_unique_value PYTHONPATH "/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation"

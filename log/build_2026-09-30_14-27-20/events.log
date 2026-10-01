@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.006449] (-) JobUnselected: {'identifier': 'ican_example_mission'}
+[0.006547] (-) JobUnselected: {'identifier': 'ican_example_ring_aim'}
+[0.006561] (-) JobUnselected: {'identifier': 'ican_referee_system'}
+[0.006571] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.006578] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.006592] (ican_example_navigation) JobQueued: {'identifier': 'ican_example_navigation', 'dependencies': OrderedDict([('navigation2', '/home/yjy/ican_shoot/ican_shoot/install/navigation2'), ('nav2_bringup', '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup')])}
+[0.006614] (ican_example_navigation) JobStarted: {'identifier': 'ican_example_navigation'}
+[0.100275] (-) TimerEvent: {}
+[0.201209] (-) TimerEvent: {}
+[0.301893] (-) TimerEvent: {}
+[0.402796] (-) TimerEvent: {}
+[0.503133] (-) TimerEvent: {}
+[0.604567] (-) TimerEvent: {}
+[0.709871] (-) TimerEvent: {}
+[0.811679] (-) TimerEvent: {}
+[0.912629] (-) TimerEvent: {}
+[1.013613] (-) TimerEvent: {}
+[1.115641] (-) TimerEvent: {}
+[1.216131] (-) TimerEvent: {}
+[1.316738] (-) TimerEvent: {}
+[1.418411] (-) TimerEvent: {}
+[1.518968] (-) TimerEvent: {}
+[1.619907] (-) TimerEvent: {}
+[1.724120] (-) TimerEvent: {}
+[1.757500] (ican_example_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ican_example_navigation', 'build', '--build-base', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build', 'install', '--record', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/install.log', '--install-scripts', '$base/lib/ican_example_navigation', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/yjy/ican_shoot/ican_shoot/src/ican_example_navigation', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHONIOENCODING', 'utf-8'), ('ZAI_OAUTH_CLIENT_ID', 'client_P8X5CMWmlaRO9gyO-KSqtg'), ('ZCODE_DESKTOP_CONTEXT_PROMPT_ENABLED', '0'), ('USER', 'yjy'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ican_shoot_sim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yjy'), ('CHROME_DESKTOP', 'zcode.desktop'), ('OLDPWD', '/home/yjy/ican_shoot/ican_shoot'), ('DESKTOP_SESSION', 'ubuntu'), ('ZAI_OAUTH_ORIGIN', 'https://chat.z.ai'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/zcode.desktop'), ('ZCODE_APP_VERSION', '3.14.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1776'), ('LC_CTYPE', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1952'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ZCODE_PROCESS_LABEL', 'local-1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '27174'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yjy/ican_shoot/ican_shoot/install:/opt/ican_shoot_sim'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yjy'), ('ZCODE_RUNTIME_ENV', 'production'), ('ZCODE_PERSONAL_PROVIDER_CONFIG_FILE', '/home/yjy/.zcode/v2/provider_config.json'), ('JOURNAL_STREAM', '8:23368'), ('_', '/usr/bin/timeout'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ZCODE_BUILTIN_PROVIDER_CONFIG_FILE', '/home/yjy/.zcode/v2/runtime/provider/linux-x86_64/3.14.3/endpoint-78d7c3bef4024722642626fe3669a799/zcode-builtin.json'), ('USERNAME', 'yjy'), ('ZAI_BUSINESS_BASE_URL', 'https://api.z.ai'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/ZCode/resources/tools/bfs:/opt/ZCode/resources/tools/ripgrep:/opt/ZCode/resources/tools/ugrep'), ('SESSION_MANAGER', 'local/yjy-virtual-machine:@/tmp/.ICE-unix/1920,unix/yjy-virtual-machine:/tmp/.ICE-unix/1920'), ('INVOCATION_ID', 'f6bcf324dd4849019b26aa253dbf4e69'), ('XDG_MENU_PREFIX', 'gnome-'), ('ZCODE_BUILD_COMMIT_ID', 'ab4d5e6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('ZCODE_BFS_BINARY', '/opt/ZCode/resources/tools/bfs/bfs'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2021V3'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/opt/ican_shoot_sim:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('PYTHONUTF8', '1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation'), ('LC_ALL', 'en_US.UTF-8'), ('ZCODE_BASE_URL', 'https://zcode.z.ai'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZCODE_RG_BINARY', '/opt/ZCode/resources/tools/ripgrep/rg'), ('PYTHONPATH', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/opt/ican_shoot_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ZCODE_UGREP_BINARY', '/opt/ZCode/resources/tools/ugrep/ugrep'), ('ZCODE_ENV', 'production'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim')]), 'shell': False}
+[1.824690] (-) TimerEvent: {}
+[1.926230] (-) TimerEvent: {}
+[2.028469] (-) TimerEvent: {}
+[2.129001] (-) TimerEvent: {}
+[2.148779] (ican_example_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[2.149758] (ican_example_navigation) StdoutLine: {'line': b'writing ../../build/ican_example_navigation/ican_example_navigation.egg-info/PKG-INFO\n'}
+[2.153168] (ican_example_navigation) StdoutLine: {'line': b'writing dependency_links to ../../build/ican_example_navigation/ican_example_navigation.egg-info/dependency_links.txt\n'}
+[2.153243] (ican_example_navigation) StdoutLine: {'line': b'writing entry points to ../../build/ican_example_navigation/ican_example_navigation.egg-info/entry_points.txt\n'}
+[2.153279] (ican_example_navigation) StdoutLine: {'line': b'writing requirements to ../../build/ican_example_navigation/ican_example_navigation.egg-info/requires.txt\n'}
+[2.153346] (ican_example_navigation) StdoutLine: {'line': b'writing top-level names to ../../build/ican_example_navigation/ican_example_navigation.egg-info/top_level.txt\n'}
+[2.165142] (ican_example_navigation) StdoutLine: {'line': b"reading manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'\n"}
+[2.170621] (ican_example_navigation) StdoutLine: {'line': b"writing manifest file '../../build/ican_example_navigation/ican_example_navigation.egg-info/SOURCES.txt'\n"}
+[2.171304] (ican_example_navigation) StdoutLine: {'line': b'running build\n'}
+[2.171396] (ican_example_navigation) StdoutLine: {'line': b'running build_py\n'}
+[2.171432] (ican_example_navigation) StdoutLine: {'line': b'copying ican_example_navigation/initial_pose_publisher.py -> /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation\n'}
+[2.171483] (ican_example_navigation) StdoutLine: {'line': b'running install\n'}
+[2.171511] (ican_example_navigation) StdoutLine: {'line': b'running install_lib\n'}
+[2.174154] (ican_example_navigation) StdoutLine: {'line': b'copying /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build/lib/ican_example_navigation/initial_pose_publisher.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation\n'}
+[2.174379] (ican_example_navigation) StdoutLine: {'line': b'byte-compiling /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation/initial_pose_publisher.py to initial_pose_publisher.cpython-310.pyc\n'}
+[2.177682] (ican_example_navigation) StdoutLine: {'line': b'running install_data\n'}
+[2.178235] (ican_example_navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.187778] (ican_example_navigation) StdoutLine: {'line': b"removing '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[2.188230] (ican_example_navigation) StdoutLine: {'line': b'Copying ../../build/ican_example_navigation/ican_example_navigation.egg-info to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican_example_navigation-0.1.0-py3.10.egg-info\n'}
+[2.197768] (ican_example_navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[2.229257] (-) TimerEvent: {}
+[2.235960] (ican_example_navigation) StdoutLine: {'line': b'Installing initial_pose_publisher script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation\n'}
+[2.236128] (ican_example_navigation) StdoutLine: {'line': b"writing list of installed files to '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/install.log'\n"}
+[2.336167] (-) TimerEvent: {}
+[2.409220] (ican_example_navigation) CommandEnded: {'returncode': 0}
+[2.436898] (-) TimerEvent: {}
+[2.512393] (ican_example_navigation) JobEnded: {'identifier': 'ican_example_navigation', 'rc': 0}
+[2.514754] (-) EventReactorShutdown: {}

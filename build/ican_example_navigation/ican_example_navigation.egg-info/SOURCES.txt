@@ -11,6 +11,13 @@ setup.py
 config/nav2_params.yaml
 ican_example_navigation/__init__.py
 ican_example_navigation/initial_pose_publisher.py
+ican_example_navigation.egg-info/PKG-INFO
+ican_example_navigation.egg-info/SOURCES.txt
+ican_example_navigation.egg-info/dependency_links.txt
+ican_example_navigation.egg-info/entry_points.txt
+ican_example_navigation.egg-info/requires.txt
+ican_example_navigation.egg-info/top_level.txt
+ican_example_navigation.egg-info/zip-safe
 launch/navigation.launch.py
 maps/land_shoot_map.pgm
 maps/land_shoot_map.yaml

@@ -1,0 +1,1 @@
+/home/yjy/ican_shoot/ican_shoot/build/navigation2/ament_cmake_environment_hooks/local_setup.zsh

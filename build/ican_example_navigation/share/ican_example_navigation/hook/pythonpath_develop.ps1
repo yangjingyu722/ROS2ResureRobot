@@ -1,3 +1,3 @@
 # generated from colcon_powershell/shell/template/hook_prepend_value.ps1.em
 
-colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX//home/houshengao/ican_shoot/build/ican_example_navigation"
+colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX//home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation"

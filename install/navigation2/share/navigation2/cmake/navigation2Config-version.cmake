@@ -1,0 +1,1 @@
+/home/yjy/ican_shoot/ican_shoot/build/navigation2/ament_cmake_core/navigation2Config-version.cmake

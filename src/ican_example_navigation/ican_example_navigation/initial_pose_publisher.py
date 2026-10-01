@@ -30,7 +30,10 @@ class InitialPosePublisher(Node):
 
     def publish_pose(self):
         msg = PoseWithCovarianceStamped()
-        msg.header.stamp = self.get_clock().now().to_msg()
+        # Stamp 置 0：AMCL 用当前最新可用的 TF 变换初始位姿，避免
+        # "Lookup would require extrapolation into the future" 抖动警告。
+        msg.header.stamp.sec = 0
+        msg.header.stamp.nanosec = 0
         msg.header.frame_id = "map"
         msg.pose.pose.position.x = float(self.get_parameter("x").value)
         msg.pose.pose.position.y = float(self.get_parameter("y").value)

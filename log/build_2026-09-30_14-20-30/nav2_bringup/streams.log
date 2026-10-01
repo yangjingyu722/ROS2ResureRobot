@@ -1,0 +1,73 @@
+[0.022s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/nav2_bringup -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup
+[0.132s] -- The C compiler identification is GNU 11.4.0
+[0.246s] -- The CXX compiler identification is GNU 11.4.0
+[0.257s] -- Detecting C compiler ABI info
+[0.453s] -- Detecting C compiler ABI info - done
+[0.458s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.460s] -- Detecting C compile features
+[0.463s] -- Detecting C compile features - done
+[0.466s] -- Detecting CXX compiler ABI info
+[0.676s] -- Detecting CXX compiler ABI info - done
+[0.686s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.689s] -- Detecting CXX compile features
+[0.689s] -- Detecting CXX compile features - done
+[0.694s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.058s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.308s] -- Found nav2_common: 1.1.20 (/opt/ros/humble/share/nav2_common/cmake)
+[1.312s] -- Found navigation2: 1.1.20 (/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/cmake)
+[1.312s] -- Setting build type to Release as none was specified.
+[1.331s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.662s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.679s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.689s] -- Added test 'lint_cmake' to check CMake code style
+[1.691s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.704s] -- Added test 'xmllint' to check XML markup files
+[1.707s] -- Configuring done
+[1.711s] -- Generating done
+[1.716s] -- Build files have been written to: /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup
+[1.730s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/nav2_bringup -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup
+[1.732s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup -- -j4 -l4
+[1.811s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup -- -j4 -l4
+[1.816s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup
+[1.842s] -- Install configuration: "Release"
+[1.842s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch
+[1.843s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/slam_launch.py
+[1.843s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/bringup_launch.py
+[1.845s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/localization_launch.py
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/navigation_launch.py
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/cloned_multi_tb3_simulation_launch.py
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/unique_multi_tb3_simulation_launch.py
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/tb3_simulation_launch.py
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/launch/rviz_launch.py
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/maps
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/maps/turtlebot3_world.yaml
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/maps/turtlebot3_world.pgm
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/rviz
+[1.848s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/rviz/nav2_default_view.rviz
+[1.849s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/rviz/nav2_namespaced_view.rviz
+[1.849s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/worlds
+[1.850s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/worlds/world_only.model
+[1.850s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/worlds/waffle.model
+[1.850s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/params
+[1.853s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/params/nav2_multirobot_params_all.yaml
+[1.858s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/params/nav2_multirobot_params_1.yaml
+[1.858s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/params/nav2_multirobot_params_2.yaml
+[1.858s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/params/nav2_params.yaml
+[1.858s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/urdf
+[1.858s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/urdf/turtlebot3_waffle.urdf
+[1.858s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/ament_index/resource_index/package_run_dependencies/nav2_bringup
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/ament_index/resource_index/parent_prefix_path/nav2_bringup
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/environment/ament_prefix_path.sh
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/environment/ament_prefix_path.dsv
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/environment/path.sh
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/environment/path.dsv
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/local_setup.bash
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/local_setup.sh
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/local_setup.zsh
+[1.869s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/local_setup.dsv
+[1.870s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.dsv
+[1.870s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/ament_index/resource_index/packages/nav2_bringup
+[1.872s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/cmake/nav2_bringupConfig.cmake
+[1.872s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/cmake/nav2_bringupConfig-version.cmake
+[1.873s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.xml
+[1.873s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup

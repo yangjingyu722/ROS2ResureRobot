@@ -1,0 +1,39 @@
+[0.093s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/navigation2 -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/navigation2
+[0.673s] -- The C compiler identification is GNU 11.4.0
+[1.003s] -- The CXX compiler identification is GNU 11.4.0
+[1.043s] -- Detecting C compiler ABI info
+[1.272s] -- Detecting C compiler ABI info - done
+[1.280s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.283s] -- Detecting C compile features
+[1.287s] -- Detecting C compile features - done
+[1.301s] -- Detecting CXX compiler ABI info
+[1.527s] -- Detecting CXX compiler ABI info - done
+[1.536s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.537s] -- Detecting CXX compile features
+[1.539s] -- Detecting CXX compile features - done
+[1.601s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.002s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.413s] -- Configuring done
+[2.420s] -- Generating done
+[2.421s] -- Build files have been written to: /home/yjy/ican_shoot/ican_shoot/build/navigation2
+[2.431s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/navigation2 -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/navigation2
+[2.439s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/navigation2 -- -j4 -l4
+[2.514s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/navigation2 -- -j4 -l4
+[2.538s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/navigation2
+[2.558s] -- Install configuration: ""
+[2.558s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/ament_index/resource_index/package_run_dependencies/navigation2
+[2.561s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/ament_index/resource_index/parent_prefix_path/navigation2
+[2.562s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/ament_prefix_path.sh
+[2.562s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/ament_prefix_path.dsv
+[2.562s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/path.sh
+[2.562s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/path.dsv
+[2.564s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.bash
+[2.564s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.sh
+[2.566s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.zsh
+[2.566s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.dsv
+[2.568s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.dsv
+[2.568s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/ament_index/resource_index/packages/navigation2
+[2.568s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/cmake/navigation2Config.cmake
+[2.568s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/cmake/navigation2Config-version.cmake
+[2.568s] -- Installing: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.xml
+[2.571s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/navigation2

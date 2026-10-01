@@ -10,5 +10,12 @@ setup.py
 ../../build/ican_referee_system/ican_referee_system.egg-info/zip-safe
 ican_referee_system/__init__.py
 ican_referee_system/referee_node.py
+ican_referee_system.egg-info/PKG-INFO
+ican_referee_system.egg-info/SOURCES.txt
+ican_referee_system.egg-info/dependency_links.txt
+ican_referee_system.egg-info/entry_points.txt
+ican_referee_system.egg-info/requires.txt
+ican_referee_system.egg-info/top_level.txt
+ican_referee_system.egg-info/zip-safe
 launch/referee.launch.py
 resource/ican_referee_system

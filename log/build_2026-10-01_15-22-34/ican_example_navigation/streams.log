@@ -1,0 +1,24 @@
+[0.855s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data --force
+[1.084s] running develop
+[1.202s] running egg_info
+[1.202s] writing ican_example_navigation.egg-info/PKG-INFO
+[1.204s] writing dependency_links to ican_example_navigation.egg-info/dependency_links.txt
+[1.204s] writing entry points to ican_example_navigation.egg-info/entry_points.txt
+[1.204s] writing requirements to ican_example_navigation.egg-info/requires.txt
+[1.204s] writing top-level names to ican_example_navigation.egg-info/top_level.txt
+[1.207s] reading manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+[1.208s] writing manifest file 'ican_example_navigation.egg-info/SOURCES.txt'
+[1.215s] running build_ext
+[1.215s] Creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages/ican-example-navigation.egg-link (link to .)
+[1.216s] Installing initial_pose_publisher script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation
+[1.216s] 
+[1.216s] Installed /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation
+[1.216s] running symlink_data
+[1.217s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/resource/ican_example_navigation -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index/packages
+[1.217s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation
+[1.217s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/launch/navigation.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/launch
+[1.217s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/maps/land_shoot_map.pgm -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+[1.217s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/maps/land_shoot_map.yaml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps
+[1.218s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/config/nav2_params.yaml -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/config
+[1.218s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/rviz/example_nav.rviz -> /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/rviz
+[1.257s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data --force

@@ -10,5 +10,12 @@ setup.py
 ../../build/ican_example_ring_aim/ican_example_ring_aim.egg-info/zip-safe
 ican_example_ring_aim/__init__.py
 ican_example_ring_aim/ring_aim_node.py
+ican_example_ring_aim.egg-info/PKG-INFO
+ican_example_ring_aim.egg-info/SOURCES.txt
+ican_example_ring_aim.egg-info/dependency_links.txt
+ican_example_ring_aim.egg-info/entry_points.txt
+ican_example_ring_aim.egg-info/requires.txt
+ican_example_ring_aim.egg-info/top_level.txt
+ican_example_ring_aim.egg-info/zip-safe
 launch/ring_aim.launch.py
 resource/ican_example_ring_aim

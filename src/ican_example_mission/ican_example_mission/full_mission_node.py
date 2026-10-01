@@ -13,6 +13,7 @@ from rclpy.node import Node
 from rclpy.qos import DurabilityPolicy, QoSProfile, ReliabilityPolicy, qos_profile_sensor_data
 from std_msgs.msg import String
 from std_srvs.srv import Trigger
+from tf2_msgs.msg import TFMessage
 
 
 def quaternion_from_yaw(yaw):
@@ -82,7 +83,7 @@ class FullMissionNode(Node):
         self.declare_parameter("model_center_tolerance_rad", 0.012)
         self.declare_parameter("model_aim_gain", 1.8)
         self.declare_parameter("max_angular_speed", 0.35)
-        self.declare_parameter("wheel_height_tolerance_m", 0.025)
+        self.declare_parameter("wheel_height_tolerance_m", 0.015)
         self.declare_parameter("required_stable_cycles", 4)
         self.declare_parameter("ring_aim_mode", "model")
         self.declare_parameter("wheel_stable_cycles", 2)
@@ -96,6 +97,17 @@ class FullMissionNode(Node):
         self.declare_parameter("referee_target_plan_topic", "/referee/target_plan")
         self.declare_parameter("referee_current_target_topic", "/referee/current_target")
         self.declare_parameter("referee_mission_event_topic", "/referee/mission_event")
+        # map->odom 由 AMCL 发布；实测中 AMCL 可能长时间停更（冻结数分钟），
+        # 导致 Nav2 控制器拿不到新鲜 TF、目标反复超时。这里按"最近一次收到且
+        # 时间戳在前进的 map->odom"判定 TF 是否新鲜，导航前先等 TF，导航中
+        # 停更则取消目标，等恢复后续跑，而不是干等 90s 超时烧掉重试次数。
+        self.declare_parameter("tf_stale_max_age_sec", 2.0)
+        self.declare_parameter("tf_stall_confirm_sec", 4.0)
+        self.declare_parameter("tf_recover_timeout_sec", 300.0)
+        self.declare_parameter("tf_max_resends", 4)
+        # 叶片穿越枪口高度窗口的判定迟滞：离开该带才允许翻转通过点方向，
+        # 避免在窗口边缘来回切换瞄准目标。
+        self.declare_parameter("wheel_pass_hysteresis_m", 0.04)
 
         self.target_ids = {
             2: int(self.get_parameter("target_2_id").value),
@@ -159,6 +171,9 @@ class FullMissionNode(Node):
             self.on_model_states,
             qos_profile_sensor_data,
         )
+        self.map_odom_last_wall = None
+        self.map_odom_last_stamp = None
+        self.create_subscription(TFMessage, "/tf", self.on_tf, qos_profile_sensor_data)
 
         self.start_delay = Duration(seconds=float(self.get_parameter("start_delay_sec").value))
         self.nav_timeout = Duration(seconds=float(self.get_parameter("nav_timeout_sec").value))
@@ -202,6 +217,13 @@ class FullMissionNode(Node):
         )
         self.publish_referee_targets = bool(self.get_parameter("publish_referee_targets").value)
         self.robot_model_name = str(self.get_parameter("robot_model_name").value)
+        self.tf_stale_max_age_sec = float(self.get_parameter("tf_stale_max_age_sec").value)
+        self.tf_stall_confirm_sec = float(self.get_parameter("tf_stall_confirm_sec").value)
+        self.tf_recover_timeout_sec = float(self.get_parameter("tf_recover_timeout_sec").value)
+        self.tf_max_resends = int(self.get_parameter("tf_max_resends").value)
+        self.wheel_pass_hysteresis_m = float(
+            self.get_parameter("wheel_pass_hysteresis_m").value
+        )
 
         self.state = "waiting"
         self.waypoint_index = 0
@@ -212,6 +234,10 @@ class FullMissionNode(Node):
         self.nav_attempt = 0
         self.nav_retry_start_monotonic = None
         self.nav_failure_time_monotonic = None
+        self.tf_resend_count = 0
+        self.tf_stale_since_monotonic = None
+        self.tf_wait_start_monotonic = None
+        self.wheel_pass_side = 1.0
         self.aim_start_time = None
         self.aim_start_monotonic = None
         self.shot_done_time = None
@@ -268,6 +294,21 @@ class FullMissionNode(Node):
     def on_model_states(self, msg):
         self.model_poses = dict(zip(msg.name, msg.pose))
 
+    def on_tf(self, msg):
+        for transform in msg.transforms:
+            if transform.header.frame_id == "map" and transform.child_frame_id == "odom":
+                stamp = transform.header.stamp.sec + transform.header.stamp.nanosec / 1e9
+                # 只在时间戳前进时刷新：AMCL 停滞后仍可能重复发布旧时间戳，
+                # 那种"活着但冻结"的 TF 不能算新鲜。
+                if stamp != self.map_odom_last_stamp:
+                    self.map_odom_last_stamp = stamp
+                    self.map_odom_last_wall = time.monotonic()
+
+    def map_tf_is_fresh(self):
+        if self.map_odom_last_wall is None:
+            return False
+        return time.monotonic() - self.map_odom_last_wall <= self.tf_stale_max_age_sec
+
     def tick(self):
         now = self.get_clock().now()
         if self.state == "waiting":
@@ -281,6 +322,9 @@ class FullMissionNode(Node):
             elapsed = time.monotonic() - self.nav_retry_start_monotonic
             if elapsed >= self.nav_retry_delay_sec:
                 self.start_navigation(is_retry=True)
+            return
+        if self.state == "nav_tf_wait":
+            self.update_tf_wait()
             return
         if self.state == "nav_failure_settle":
             elapsed = time.monotonic() - self.nav_failure_time_monotonic
@@ -308,17 +352,22 @@ class FullMissionNode(Node):
                 self.start_navigation()
 
     def start_navigation(self, is_retry=False):
-        if not self.nav_client.wait_for_server(timeout_sec=0.1):
-            self.log_waiting("等待 Nav2 /navigate_to_pose action server...")
-            self.state = "waiting_for_nav"
-            # Keep using the timer without resetting the mission start delay.
-            self.state = "waiting"
-            return
-
-        waypoint = self.current_waypoint
         if not is_retry:
             self.nav_attempt = 0
+            self.tf_resend_count = 0
+        if not self.nav_client.wait_for_server(timeout_sec=0.1):
+            self.log_waiting("等待 Nav2 /navigate_to_pose action server...")
+            return
+        if not self.map_tf_is_fresh():
+            self.log_waiting("map->odom TF 不新鲜，暂缓发送导航目标...")
+            self.tf_wait_start_monotonic = time.monotonic()
+            self.state = "nav_tf_wait"
+            return
         self.nav_attempt += 1
+        self.send_nav_goal()
+
+    def send_nav_goal(self):
+        waypoint = self.current_waypoint
         goal = NavigateToPose.Goal()
         goal.pose = PoseStamped()
         goal.pose.header.frame_id = "map"
@@ -335,7 +384,34 @@ class FullMissionNode(Node):
         self.nav_start_time = self.get_clock().now()
         self.nav_goal_handle = None
         self.nav_result_future = None
+        self.tf_stale_since_monotonic = None
         self.state = "navigating"
+
+    def update_tf_wait(self):
+        if self.map_tf_is_fresh():
+            self.tf_wait_start_monotonic = None
+            self.get_logger().info("map->odom TF 已恢复，继续发送导航目标。")
+            if self.nav_attempt == 0:
+                # 首次发送被 TF 停摆推迟，恢复后作为第 1 次尝试计。
+                self.start_navigation(is_retry=True)
+            elif self.tf_resend_count >= self.tf_max_resends:
+                self.get_logger().warn("TF 恢复后的重发次数已达上限，按导航失败处理。")
+                self.retry_or_finish_navigation()
+            else:
+                self.tf_resend_count += 1
+                # 继续被停摆打断的当前尝试，不消耗导航重试预算。
+                self.send_nav_goal()
+            return
+        self.log_waiting("等待 map->odom TF 恢复...")
+        if (
+            self.tf_wait_start_monotonic is not None
+            and time.monotonic() - self.tf_wait_start_monotonic > self.tf_recover_timeout_sec
+        ):
+            self.tf_wait_start_monotonic = None
+            self.get_logger().error(
+                f"map->odom TF 超过 {self.tf_recover_timeout_sec:.0f}s 未恢复，按导航失败处理。"
+            )
+            self.retry_or_finish_navigation()
 
     def on_nav_goal_response(self, future):
         try:
@@ -368,6 +444,23 @@ class FullMissionNode(Node):
                 )
             self.finish_navigation(succeeded)
             return
+        if not self.map_tf_is_fresh():
+            if self.tf_stale_since_monotonic is None:
+                self.tf_stale_since_monotonic = time.monotonic()
+            elif time.monotonic() - self.tf_stale_since_monotonic >= self.tf_stall_confirm_sec:
+                stale_for = time.monotonic() - self.tf_stale_since_monotonic
+                self.get_logger().warn(
+                    f"前往 {self.current_waypoint['label']} 期间 map->odom TF 停更 "
+                    f"{stale_for:.0f}s，取消当前目标并等待恢复。"
+                )
+                if self.nav_goal_handle is not None:
+                    self.nav_goal_handle.cancel_goal_async()
+                self.stop_robot()
+                self.tf_stale_since_monotonic = None
+                self.tf_wait_start_monotonic = time.monotonic()
+                self.state = "nav_tf_wait"
+            return
+        self.tf_stale_since_monotonic = None
         if self.nav_start_time is not None and now - self.nav_start_time > self.nav_timeout:
             if self.robot_is_inside_current_task_area():
                 self.get_logger().warn(
@@ -533,6 +626,20 @@ class FullMissionNode(Node):
         )
         if aim_type == "wheel":
             height_ready = abs(point[2] - 0.26) <= self.wheel_height_tolerance
+            # 叶片绕水平轴旋转，只有经过枪口高度(0.26m)的窗口才可能被水平弹道
+            # 命中；而穿越窗口时叶片横向偏移恰好达到最大值(±半径)且在窗口内
+            # 近似恒定。若直接瞄准叶片瞬时位置，需求航向随旋转正弦摆动 ±3.3°，
+            # 窗口开启瞬间偏差最大，实测永远对不齐（对准容差仅 0.69°）。改为
+            # 瞄准叶片"即将穿越枪口高度"的通过点：方向由当前叶片在轮心上方/
+            # 下方决定，旋转方向不变时为固定值，机器人可先对准再静候窗口。
+            radius = math.hypot(local_y, local_z)
+            if abs(rotated[2]) > self.wheel_pass_hysteresis_m:
+                self.wheel_pass_side = -1.0 if rotated[2] > 0.0 else 1.0
+            point = (
+                point[0],
+                pose.position.y + self.wheel_pass_side * radius,
+                point[2],
+            )
         return point, height_ready
 
     def publish_angular(self, angular_speed):
