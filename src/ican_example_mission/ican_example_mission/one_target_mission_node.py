@@ -4,6 +4,8 @@ from action_msgs.msg import GoalStatus
 from geometry_msgs.msg import PointStamped, PoseStamped, Quaternion, Twist
 from nav2_msgs.action import NavigateToPose
 import rclpy
+
+from ican_example_mission.instance_guard import InstanceGuard
 from rclpy.action import ActionClient
 from rclpy.duration import Duration
 from rclpy.executors import ExternalShutdownException
@@ -90,6 +92,11 @@ class OneTargetMissionNode(Node):
         self.nav_start_time = None
         self.aim_start_time = None
         self.timer = self.create_timer(0.05, self.tick)
+        # 单实例保护：探测窗口结束前不发导航目标，避免与残留的旧实例互相干扰。
+        self.instance_guard = InstanceGuard(
+            self, "one_target", lambda: self.state
+        )
+        self.instance_probe_done = False
 
         self.get_logger().info(
             "示例流程准备完成：先导航到 1 号任务点 "
@@ -133,6 +140,19 @@ class OneTargetMissionNode(Node):
     def tick(self):
         now = self.get_clock().now()
         if self.state == "waiting":
+            if not self.instance_probe_done:
+                verdict = self.instance_guard.probe_once()
+                if verdict is None:
+                    return
+                self.instance_probe_done = True
+                if verdict:
+                    self.get_logger().error(
+                        "检测到另一个任务实例仍在运行："
+                        f"{self.instance_guard.describe_conflict()}。两个实例会互相抢"
+                        " /cmd_vel 并各自开火（重复子弹），本实例退出。"
+                        "请先结束旧任务节点（或运行 scripts/cleanup_stack.sh）后重新启动。"
+                    )
+                    raise SystemExit(2)
             if now - self.boot_time >= self.start_delay:
                 self.start_navigation()
             return

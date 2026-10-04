@@ -10,6 +10,7 @@ setup.py
 ../../build/ican_example_mission/ican_example_mission.egg-info/zip-safe
 ican_example_mission/__init__.py
 ican_example_mission/full_mission_node.py
+ican_example_mission/instance_guard.py
 ican_example_mission/one_target_mission_node.py
 ican_example_mission.egg-info/PKG-INFO
 ican_example_mission.egg-info/SOURCES.txt

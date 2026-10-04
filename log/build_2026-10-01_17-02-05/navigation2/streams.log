@@ -1,0 +1,21 @@
+[0.031s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/navigation2 -- -j4 -l4
+[0.647s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/navigation2 -- -j4 -l4
+[0.662s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/navigation2
+[0.681s] -- Install configuration: ""
+[0.681s] -- Execute custom install script
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/ament_index/resource_index/package_run_dependencies/navigation2
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/ament_index/resource_index/parent_prefix_path/navigation2
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/ament_prefix_path.sh
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/ament_prefix_path.dsv
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/path.sh
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/environment/path.dsv
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.bash
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.sh
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.zsh
+[0.681s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/local_setup.dsv
+[0.681s] -- Symlinking: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.dsv
+[0.696s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/ament_index/resource_index/packages/navigation2
+[0.696s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/cmake/navigation2Config.cmake
+[0.696s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/cmake/navigation2Config-version.cmake
+[0.696s] -- Up-to-date symlink: /home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.xml
+[0.699s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/navigation2

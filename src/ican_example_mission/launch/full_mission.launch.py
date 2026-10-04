@@ -68,6 +68,10 @@ def launch_setup(context, *args, **kwargs):
         "wheel_stable_cycles": LaunchConfiguration("wheel_stable_cycles"),
         "shots_per_target": LaunchConfiguration("shots_per_target"),
         "fire_without_aim": LaunchConfiguration("fire_without_aim"),
+        "tf_recover_timeout_sec": LaunchConfiguration("tf_recover_timeout_sec"),
+        "recover_amcl_on_stall": LaunchConfiguration("recover_amcl_on_stall"),
+        "moving_target_lead": LaunchConfiguration("moving_target_lead"),
+        "reset_referee_on_start": LaunchConfiguration("reset_referee_on_start"),
         "target_2_id": target_2_id,
         "target_3_id": target_3_id,
         "target_4_id": target_4_id,
@@ -103,21 +107,28 @@ def generate_launch_description():
     return LaunchDescription(
         [
             DeclareLaunchArgument("start_delay_sec", default_value="2.0"),
-            DeclareLaunchArgument("nav_timeout_sec", default_value="90.0"),
+            # 比赛规则不允许机器人长时间静止，导航超时按 30 秒红线收紧。
+            DeclareLaunchArgument("nav_timeout_sec", default_value="40.0"),
             DeclareLaunchArgument("nav_goal_retries", default_value="2"),
             DeclareLaunchArgument("initial_nav_goal_retries", default_value="3"),
             DeclareLaunchArgument("nav_retry_delay_sec", default_value="3.0"),
             DeclareLaunchArgument("nav_failure_settle_sec", default_value="5.0"),
             DeclareLaunchArgument(
-                "nav_position_fallback_tolerance_m", default_value="0.12"
+                "nav_position_fallback_tolerance_m", default_value="0.30"
             ),
             DeclareLaunchArgument("task_3_right_offset_m", default_value="0.02"),
             DeclareLaunchArgument("task_4_right_offset_m", default_value="0.04"),
             DeclareLaunchArgument("aim_timeout_sec", default_value="15.0"),
             DeclareLaunchArgument("ring_aim_mode", default_value="model"),
             DeclareLaunchArgument("wheel_stable_cycles", default_value="2"),
-            DeclareLaunchArgument("shots_per_target", default_value="1"),
+            # 默认每靶 2 发：裁判确认命中后跳过补射，未命中才补射。
+            DeclareLaunchArgument("shots_per_target", default_value="2"),
             DeclareLaunchArgument("fire_without_aim", default_value="true"),
+            # 单次 TF 停更等待上限卡在比赛 30s 静止红线以内，等不到就重试续命。
+            DeclareLaunchArgument("tf_recover_timeout_sec", default_value="25.0"),
+            DeclareLaunchArgument("recover_amcl_on_stall", default_value="true"),
+            DeclareLaunchArgument("moving_target_lead", default_value="true"),
+            DeclareLaunchArgument("reset_referee_on_start", default_value="true"),
             DeclareLaunchArgument("target_2_id", default_value="1"),
             DeclareLaunchArgument("target_3_id", default_value="6"),
             DeclareLaunchArgument("target_4_id", default_value="8"),

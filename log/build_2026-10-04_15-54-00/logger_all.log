@@ -1,0 +1,499 @@
+[0.173s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.173s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b49f5a59690>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b49f5bdad70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b49f5bdad70>>, mixin_verb=('build',))
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.436s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.437s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yjy/ican_shoot/ican_shoot'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'ros'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extensions ['cmake', 'python']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'cmake'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'python'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extensions ['python_setup_py']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(packages) by extension 'python_setup_py'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'ignore'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'ignore_ament_install'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extensions ['colcon_pkg']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'colcon_pkg'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extensions ['colcon_meta']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'ros'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extensions ['cmake', 'python']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'cmake'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'python'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extensions ['python_setup_py']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/__pycache__) by extension 'python_setup_py'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_mission) by extension 'ros'
+[0.460s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ican_example_mission' with type 'ros.ament_python' and name 'ican_example_mission'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extensions ['ros']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_navigation) by extension 'ros'
+[0.461s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ican_example_navigation' with type 'ros.ament_python' and name 'ican_example_navigation'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extensions ['colcon_pkg']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extension 'colcon_meta'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extensions ['ros']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_example_ring_aim) by extension 'ros'
+[0.462s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ican_example_ring_aim' with type 'ros.ament_python' and name 'ican_example_ring_aim'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extensions ['ignore', 'ignore_ament_install']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extension 'ignore_ament_install'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extensions ['colcon_pkg']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extension 'colcon_pkg'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extensions ['colcon_meta']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extension 'colcon_meta'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extensions ['ros']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/ican_referee_system) by extension 'ros'
+[0.463s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ican_referee_system' with type 'ros.ament_python' and name 'ican_referee_system'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extension 'ignore'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extension 'ignore_ament_install'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extensions ['colcon_pkg']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extension 'colcon_pkg'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extensions ['colcon_meta']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extension 'colcon_meta'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extensions ['ros']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_bringup) by extension 'ros'
+[0.464s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav2_bringup' with type 'ros.ament_cmake' and name 'nav2_bringup'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extension 'ignore_ament_install'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extensions ['colcon_pkg']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extension 'colcon_pkg'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extensions ['colcon_meta']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extension 'colcon_meta'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extensions ['ros']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation2) by extension 'ros'
+[0.465s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation2' with type 'ros.ament_cmake' and name 'navigation2'
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'cmake_target' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'cmake_clean_first' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'cmake_force_configure' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'ament_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'ican_example_ring_aim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.507s] DEBUG:colcon.colcon_core.verb:Building package 'ican_example_ring_aim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim', 'merge_install': False, 'path': '/home/yjy/ican_shoot/ican_shoot/src/ican_example_ring_aim', 'symlink_install': True, 'test_result_base': None}
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'cmake_target' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'ican_referee_system' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'ican_referee_system' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system', 'merge_install': False, 'path': '/home/yjy/ican_shoot/ican_shoot/src/ican_referee_system', 'symlink_install': True, 'test_result_base': None}
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'cmake_target' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yjy/ican_shoot/ican_shoot/build/navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yjy/ican_shoot/ican_shoot/install/navigation2', 'merge_install': False, 'path': '/home/yjy/ican_shoot/ican_shoot/src/navigation2', 'symlink_install': True, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'nav2_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.510s] DEBUG:colcon.colcon_core.verb:Building package 'nav2_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup', 'merge_install': False, 'path': '/home/yjy/ican_shoot/ican_shoot/src/nav2_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.510s] DEBUG:colcon.colcon_core.verb:Building package 'ican_example_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation', 'merge_install': False, 'path': '/home/yjy/ican_shoot/ican_shoot/src/ican_example_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'cmake_clean_first' from command line to 'False'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'cmake_force_configure' from command line to 'False'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'ament_cmake_args' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'catkin_cmake_args' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'ican_example_mission' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.511s] DEBUG:colcon.colcon_core.verb:Building package 'ican_example_mission' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission', 'merge_install': False, 'path': '/home/yjy/ican_shoot/ican_shoot/src/ican_example_mission', 'symlink_install': True, 'test_result_base': None}
+[0.511s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.512s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.512s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yjy/ican_shoot/ican_shoot/src/navigation2' with build type 'ament_cmake'
+[0.512s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yjy/ican_shoot/ican_shoot/src/navigation2'
+[0.514s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.514s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.515s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.523s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_ring_aim' with build type 'ament_python'
+[0.523s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_ring_aim', 'ament_prefix_path')
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/hook/ament_prefix_path.ps1'
+[0.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/hook/ament_prefix_path.dsv'
+[0.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/hook/ament_prefix_path.sh'
+[0.526s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.530s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yjy/ican_shoot/ican_shoot/src/ican_referee_system' with build type 'ament_python'
+[0.530s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_referee_system', 'ament_prefix_path')
+[0.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/hook/ament_prefix_path.ps1'
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/hook/ament_prefix_path.dsv'
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/hook/ament_prefix_path.sh'
+[0.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/navigation2
+[0.784s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_ring_aim'
+[0.784s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.784s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.025s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yjy/ican_shoot/ican_shoot/src/ican_referee_system'
+[1.026s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.026s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/navigation2
+[1.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/navigation2 -- -j4 -l4
+[1.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/navigation2 -- -j4 -l4
+[1.099s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/navigation2
+[1.126s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation2)
+[1.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/navigation2
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2' for CMake module files
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2' for CMake config files
+[1.131s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation2', 'cmake_prefix_path')
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/hook/cmake_prefix_path.ps1'
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/hook/cmake_prefix_path.dsv'
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/hook/cmake_prefix_path.sh'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/bin'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/lib/pkgconfig/navigation2.pc'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/lib/python3.10/site-packages'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/bin'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.ps1'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.dsv'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.sh'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.bash'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.zsh'
+[1.137s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/colcon-core/packages/navigation2)
+[1.138s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation2)
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2' for CMake module files
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2' for CMake config files
+[1.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation2', 'cmake_prefix_path')
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/hook/cmake_prefix_path.ps1'
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/hook/cmake_prefix_path.dsv'
+[1.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/hook/cmake_prefix_path.sh'
+[1.141s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/bin'
+[1.141s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/lib/pkgconfig/navigation2.pc'
+[1.141s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/lib/python3.10/site-packages'
+[1.141s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/navigation2/bin'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.ps1'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.dsv'
+[1.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.sh'
+[1.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.bash'
+[1.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/navigation2/package.zsh'
+[1.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/navigation2/share/colcon-core/packages/navigation2)
+[1.145s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yjy/ican_shoot/ican_shoot/src/nav2_bringup' with build type 'ament_cmake'
+[1.146s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yjy/ican_shoot/ican_shoot/src/nav2_bringup'
+[1.146s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.146s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/nav2_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup
+[1.341s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_scripts, install_data, install_egg_info, build_ext, build, install_scripts, upload_docs, sdist, install_headers, build_py, build_clib, rotate, saveopts, egg_info, develop, clean, install, easy_install, symlink_data, install_lib, bdist_rpm, setopt, test, check, alias, upload, bdist, bdist_wheel, bdist_egg, dist_info, bdist_dumb, register
+[1.355s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_scripts, install_data, install_egg_info, build_ext, build, install_scripts, upload_docs, sdist, install_headers, build_py, build_clib, rotate, saveopts, egg_info, develop, clean, install, easy_install, symlink_data, install_lib, bdist_rpm, setopt, test, check, alias, upload, bdist, bdist_wheel, bdist_egg, dist_info, bdist_dumb, register
+[1.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/opt/ros/humble /usr/bin/cmake /home/yjy/ican_shoot/ican_shoot/src/nav2_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup
+[1.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup -- -j4 -l4
+[1.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/opt/ros/humble /usr/bin/cmake --build /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup -- -j4 -l4
+[1.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup
+[1.530s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_bringup)
+[1.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/nav2_bringup' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim:/opt/ros/humble /usr/bin/cmake --install /home/yjy/ican_shoot/ican_shoot/build/nav2_bringup
+[1.531s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup' for CMake module files
+[1.532s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup' for CMake config files
+[1.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_bringup', 'cmake_prefix_path')
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/hook/cmake_prefix_path.ps1'
+[1.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/hook/cmake_prefix_path.dsv'
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/hook/cmake_prefix_path.sh'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/bin'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/lib/pkgconfig/nav2_bringup.pc'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/lib/python3.10/site-packages'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/bin'
+[1.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.ps1'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.dsv'
+[1.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.sh'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.bash'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.zsh'
+[1.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/colcon-core/packages/nav2_bringup)
+[1.545s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_bringup)
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup' for CMake module files
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup' for CMake config files
+[1.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_bringup', 'cmake_prefix_path')
+[1.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/hook/cmake_prefix_path.ps1'
+[1.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/hook/cmake_prefix_path.dsv'
+[1.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/hook/cmake_prefix_path.sh'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/bin'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/lib/pkgconfig/nav2_bringup.pc'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/lib/python3.10/site-packages'
+[1.548s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/bin'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.ps1'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.dsv'
+[1.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.sh'
+[1.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.bash'
+[1.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/nav2_bringup/package.zsh'
+[1.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup/share/colcon-core/packages/nav2_bringup)
+[1.552s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_navigation' with build type 'ament_python'
+[1.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_navigation', 'ament_prefix_path')
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/hook/ament_prefix_path.ps1'
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/hook/ament_prefix_path.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/hook/ament_prefix_path.sh'
+[1.553s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.553s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.784s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_navigation'
+[1.784s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.784s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.788s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --index-url, --multi-version, --always-copy, --record, --version, --build-directory, --force-installation-into-system-dir, --verbose, --install-layout, --no-deps, --find-links, --dry-run, --install-dir, --help, --optimize, --exclude-scripts, --allow-hosts, --no-user-cfg, --egg-path, --always-unzip, --site-dirs, --prefix, --local-snapshots-ok, --editable, --uninstall, --upgrade, --script-dir, --user, --quiet, --no-find-links, --zip-ok
+[1.789s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ament_index/resource_index/packages/ican_example_ring_aim
+[1.789s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/package.xml
+[1.789s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/launch/ring_aim.launch.py
+[1.789s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/ican_example_ring_aim/ring_aim_node
+[1.793s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --index-url, --multi-version, --always-copy, --record, --version, --build-directory, --force-installation-into-system-dir, --verbose, --install-layout, --no-deps, --find-links, --dry-run, --install-dir, --help, --optimize, --exclude-scripts, --allow-hosts, --no-user-cfg, --egg-path, --always-unzip, --site-dirs, --prefix, --local-snapshots-ok, --editable, --uninstall, --upgrade, --script-dir, --user, --quiet, --no-find-links, --zip-ok
+[1.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build --no-deps symlink_data --force
+[1.794s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ament_index/resource_index/packages/ican_referee_system
+[1.794s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/package.xml
+[1.794s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/launch/referee.launch.py
+[1.794s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/ican_referee_system/referee_node
+[1.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build --no-deps symlink_data --force
+[2.125s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_scripts, install_data, install_egg_info, build_ext, build, install_scripts, upload_docs, sdist, install_headers, build_py, build_clib, rotate, saveopts, egg_info, develop, clean, install, easy_install, symlink_data, install_lib, bdist_rpm, setopt, test, check, alias, upload, bdist, bdist_wheel, bdist_egg, dist_info, bdist_dumb, register
+[2.200s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_ring_aim', 'pythonpath_develop')
+[2.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/share/ican_example_ring_aim/hook/pythonpath_develop.ps1'
+[2.201s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/build --no-deps symlink_data --force
+[2.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/share/ican_example_ring_aim/hook/pythonpath_develop.dsv'
+[2.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim/share/ican_example_ring_aim/hook/pythonpath_develop.sh'
+[2.204s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim' for CMake module files
+[2.204s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim' for CMake config files
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/bin'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/pkgconfig/ican_example_ring_aim.pc'
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages'
+[2.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_ring_aim', 'pythonpath')
+[2.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/hook/pythonpath.ps1'
+[2.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/hook/pythonpath.dsv'
+[2.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/hook/pythonpath.sh'
+[2.212s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/bin'
+[2.212s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ican_example_ring_aim)
+[2.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/package.ps1'
+[2.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/package.dsv'
+[2.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/package.sh'
+[2.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/package.bash'
+[2.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/ican_example_ring_aim/package.zsh'
+[2.214s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/share/colcon-core/packages/ican_example_ring_aim)
+[2.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_referee_system', 'pythonpath_develop')
+[2.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/share/ican_referee_system/hook/pythonpath_develop.ps1'
+[2.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build --no-deps symlink_data --force
+[2.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/share/ican_referee_system/hook/pythonpath_develop.dsv'
+[2.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/share/ican_referee_system/hook/pythonpath_develop.sh'
+[2.217s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system' for CMake module files
+[2.218s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system' for CMake config files
+[2.222s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib'
+[2.222s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/bin'
+[2.222s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/pkgconfig/ican_referee_system.pc'
+[2.222s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages'
+[2.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_referee_system', 'pythonpath')
+[2.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/hook/pythonpath.ps1'
+[2.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/hook/pythonpath.dsv'
+[2.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/hook/pythonpath.sh'
+[2.224s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/bin'
+[2.224s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ican_referee_system)
+[2.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/package.ps1'
+[2.227s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/package.dsv'
+[2.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/package.sh'
+[2.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/package.bash'
+[2.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/package.zsh'
+[2.229s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/colcon-core/packages/ican_referee_system)
+[2.381s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --index-url, --multi-version, --always-copy, --record, --version, --build-directory, --force-installation-into-system-dir, --verbose, --install-layout, --no-deps, --find-links, --dry-run, --install-dir, --help, --optimize, --exclude-scripts, --allow-hosts, --no-user-cfg, --egg-path, --always-unzip, --site-dirs, --prefix, --local-snapshots-ok, --editable, --uninstall, --upgrade, --script-dir, --user, --quiet, --no-find-links, --zip-ok
+[2.382s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ament_index/resource_index/packages/ican_example_navigation
+[2.382s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/package.xml
+[2.383s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/launch/navigation.launch.py
+[2.383s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps/land_shoot_map.pgm
+[2.383s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps/land_shoot_map.yaml
+[2.383s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/config/nav2_params.yaml
+[2.383s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/rviz/example_nav.rviz
+[2.383s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/ican_example_navigation/initial_pose_publisher
+[2.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data --force
+[2.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_navigation', 'pythonpath_develop')
+[2.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/share/ican_example_navigation/hook/pythonpath_develop.ps1'
+[2.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/build --no-deps symlink_data --force
+[2.816s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/share/ican_example_navigation/hook/pythonpath_develop.dsv'
+[2.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation/share/ican_example_navigation/hook/pythonpath_develop.sh'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation' for CMake module files
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation' for CMake config files
+[2.821s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib'
+[2.822s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/bin'
+[2.822s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/pkgconfig/ican_example_navigation.pc'
+[2.822s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages'
+[2.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_navigation', 'pythonpath')
+[2.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/hook/pythonpath.ps1'
+[2.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/hook/pythonpath.dsv'
+[2.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/hook/pythonpath.sh'
+[2.825s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/bin'
+[2.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ican_example_navigation)
+[2.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/package.ps1'
+[2.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/package.dsv'
+[2.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/package.sh'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/package.bash'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/package.zsh'
+[2.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/colcon-core/packages/ican_example_navigation)
+[2.829s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_mission' with build type 'ament_python'
+[2.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_mission', 'ament_prefix_path')
+[2.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/hook/ament_prefix_path.ps1'
+[2.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/hook/ament_prefix_path.dsv'
+[2.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/hook/ament_prefix_path.sh'
+[2.832s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.832s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.086s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yjy/ican_shoot/ican_shoot/src/ican_example_mission'
+[3.086s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.086s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.404s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_scripts, install_data, install_egg_info, build_ext, build, install_scripts, upload_docs, sdist, install_headers, build_py, build_clib, rotate, saveopts, egg_info, develop, clean, install, easy_install, symlink_data, install_lib, bdist_rpm, setopt, test, check, alias, upload, bdist, bdist_wheel, bdist_egg, dist_info, bdist_dumb, register
+[3.654s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --index-url, --multi-version, --always-copy, --record, --version, --build-directory, --force-installation-into-system-dir, --verbose, --install-layout, --no-deps, --find-links, --dry-run, --install-dir, --help, --optimize, --exclude-scripts, --allow-hosts, --no-user-cfg, --egg-path, --always-unzip, --site-dirs, --prefix, --local-snapshots-ok, --editable, --uninstall, --upgrade, --script-dir, --user, --quiet, --no-find-links, --zip-ok
+[3.656s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ament_index/resource_index/packages/ican_example_mission
+[3.656s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/package.xml
+[3.656s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch/one_target_demo.launch.py
+[3.656s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/launch/full_mission.launch.py
+[3.656s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission/full_mission_node
+[3.656s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission/one_target_mission_node
+[3.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build --no-deps symlink_data --force
+[4.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_mission', 'pythonpath_develop')
+[4.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/share/ican_example_mission/hook/pythonpath_develop.ps1'
+[4.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission' returned '0': AMENT_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build --no-deps symlink_data --force
+[4.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/share/ican_example_mission/hook/pythonpath_develop.dsv'
+[4.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/share/ican_example_mission/hook/pythonpath_develop.sh'
+[4.080s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission' for CMake module files
+[4.080s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission' for CMake config files
+[4.082s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib'
+[4.082s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/bin'
+[4.083s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/pkgconfig/ican_example_mission.pc'
+[4.083s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages'
+[4.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('ican_example_mission', 'pythonpath')
+[4.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/hook/pythonpath.ps1'
+[4.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/hook/pythonpath.dsv'
+[4.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/hook/pythonpath.sh'
+[4.085s] Level 1:colcon.colcon_core.environment:checking '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/bin'
+[4.085s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ican_example_mission)
+[4.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/package.ps1'
+[4.086s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/package.dsv'
+[4.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/package.sh'
+[4.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/package.bash'
+[4.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/ican_example_mission/package.zsh'
+[4.087s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/share/colcon-core/packages/ican_example_mission)
+[4.088s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.089s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.089s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.089s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.089s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.090s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yjy/ican_shoot/ican_shoot/install/local_setup.ps1'
+[4.091s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yjy/ican_shoot/ican_shoot/install/_local_setup_util_ps1.py'
+[4.092s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yjy/ican_shoot/ican_shoot/install/setup.ps1'
+[4.093s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yjy/ican_shoot/ican_shoot/install/local_setup.sh'
+[4.096s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yjy/ican_shoot/ican_shoot/install/_local_setup_util_sh.py'
+[4.098s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yjy/ican_shoot/ican_shoot/install/setup.sh'
+[4.100s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yjy/ican_shoot/ican_shoot/install/local_setup.bash'
+[4.101s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yjy/ican_shoot/ican_shoot/install/setup.bash'
+[4.102s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yjy/ican_shoot/ican_shoot/install/local_setup.zsh'
+[4.102s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yjy/ican_shoot/ican_shoot/install/setup.zsh'

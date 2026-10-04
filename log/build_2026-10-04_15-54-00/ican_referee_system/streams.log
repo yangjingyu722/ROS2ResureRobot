@@ -1,0 +1,20 @@
+[1.268s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build --no-deps symlink_data --force
+[1.485s] running develop
+[1.613s] running egg_info
+[1.613s] writing ican_referee_system.egg-info/PKG-INFO
+[1.615s] writing dependency_links to ican_referee_system.egg-info/dependency_links.txt
+[1.615s] writing entry points to ican_referee_system.egg-info/entry_points.txt
+[1.615s] writing requirements to ican_referee_system.egg-info/requires.txt
+[1.615s] writing top-level names to ican_referee_system.egg-info/top_level.txt
+[1.617s] reading manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+[1.618s] writing manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+[1.619s] running build_ext
+[1.620s] Creating /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican-referee-system.egg-link (link to .)
+[1.621s] Installing referee_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/ican_referee_system
+[1.621s] 
+[1.621s] Installed /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system
+[1.621s] running symlink_data
+[1.622s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/resource/ican_referee_system -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ament_index/resource_index/packages
+[1.622s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/package.xml -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system
+[1.622s] symbolically linking /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/launch/referee.launch.py -> /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/share/ican_referee_system/launch
+[1.685s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build --no-deps symlink_data --force

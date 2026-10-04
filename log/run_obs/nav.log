@@ -1,0 +1,391 @@
+[INFO] [launch]: All log files can be found below /home/yjy/.ros/log/2026-10-04-15-58-46-295737-yjy-virtual-machine-6222
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_server-1]: process started with pid [6224]
+[INFO] [amcl-2]: process started with pid [6226]
+[INFO] [lifecycle_manager-3]: process started with pid [6228]
+[INFO] [controller_server-4]: process started with pid [6230]
+[INFO] [smoother_server-5]: process started with pid [6232]
+[INFO] [planner_server-6]: process started with pid [6234]
+[INFO] [behavior_server-7]: process started with pid [6236]
+[INFO] [bt_navigator-8]: process started with pid [6240]
+[INFO] [waypoint_follower-9]: process started with pid [6250]
+[INFO] [velocity_smoother-10]: process started with pid [6259]
+[INFO] [lifecycle_manager-11]: process started with pid [6272]
+[map_server-1] [INFO] [1791100727.140361296] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1791100727.140634336] [map_server]: Creating
+[planner_server-6] [INFO] [1791100727.263217799] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1791100727.331387553] [waypoint_follower]: 
+[waypoint_follower-9] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-9] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1791100727.342411685] [waypoint_follower]: Creating
+[planner_server-6] [INFO] [1791100727.351071681] [planner_server]: Creating
+[lifecycle_manager-11] [INFO] [1791100727.359269724] [lifecycle_manager_navigation]: Creating
+[amcl-2] [INFO] [1791100727.372514747] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1791100727.382440776] [amcl]: Creating
+[velocity_smoother-10] [INFO] [1791100727.406143401] [velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-11] [INFO] [1791100727.459739718] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[smoother_server-5] [INFO] [1791100727.466608948] [smoother_server]: 
+[smoother_server-5] 	smoother_server lifecycle node launched. 
+[smoother_server-5] 	Waiting on external lifecycle transitions to activate
+[smoother_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1791100727.468222619] [smoother_server]: Creating smoother server
+[lifecycle_manager-3] [INFO] [1791100727.469626796] [lifecycle_manager_localization]: Creating
+[controller_server-4] [INFO] [1791100727.485741134] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-7] [INFO] [1791100727.510094425] [behavior_server]: 
+[behavior_server-7] 	behavior_server lifecycle node launched. 
+[behavior_server-7] 	Waiting on external lifecycle transitions to activate
+[behavior_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-3] [INFO] [1791100727.521247722] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-4] [INFO] [1791100727.531661441] [controller_server]: Creating controller server
+[lifecycle_manager-3] [INFO] [1791100727.594341892] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-3] [INFO] [1791100727.594662005] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[bt_navigator-8] [INFO] [1791100727.675437588] [bt_navigator]: 
+[bt_navigator-8] 	bt_navigator lifecycle node launched. 
+[bt_navigator-8] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1791100727.677005960] [bt_navigator]: Creating
+[map_server-1] [INFO] [1791100727.770638598] [map_server]: Configuring
+[map_server-1] [INFO] [1791100727.770714518] [map_io]: Loading yaml file: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps/land_shoot_map.yaml
+[map_server-1] [INFO] [1791100727.774105574] [map_io]: resolution: 0.025
+[map_server-1] [INFO] [1791100727.774540134] [map_io]: origin[0]: -0.9
+[map_server-1] [INFO] [1791100727.774546917] [map_io]: origin[1]: -3.5
+[map_server-1] [INFO] [1791100727.774550494] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1791100727.774554031] [map_io]: free_thresh: 0.25
+[map_server-1] [INFO] [1791100727.774557057] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1791100727.774563049] [map_io]: mode: trinary
+[map_server-1] [INFO] [1791100727.774567899] [map_io]: negate: 0
+[map_server-1] [INFO] [1791100727.777258059] [map_io]: Loading image_file: /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps/land_shoot_map.pgm
+[map_server-1] [INFO] [1791100727.801862096] [map_io]: Read map /home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/share/ican_example_navigation/maps/land_shoot_map.pgm: 124 X 176 map @ 0.025 m/cell
+[planner_server-6] [INFO] [1791100727.821177094] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1791100727.835415572] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-4] [INFO] [1791100727.843306467] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1791100727.844374129] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-3] [INFO] [1791100727.862860498] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-2] [INFO] [1791100727.863385556] [amcl]: Configuring
+[amcl-2] [INFO] [1791100727.863473570] [amcl]: initTransforms
+[amcl-2] [INFO] [1791100727.914733582] [amcl]: initPubSub
+[amcl-2] [INFO] [1791100727.956171119] [amcl]: Subscribed to map topic.
+[lifecycle_manager-3] [INFO] [1791100727.973124837] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1791100727.973952243] [map_server]: Activating
+[map_server-1] [INFO] [1791100727.975078200] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1791100727.976217964] [amcl]: Received a 124 X 176 map @ 0.025 m/pix
+[lifecycle_manager-3] [INFO] [1791100728.096253847] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-3] [INFO] [1791100728.096339807] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-2] [INFO] [1791100728.096793745] [amcl]: Activating
+[amcl-2] [INFO] [1791100728.097940112] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100728.098296667] [amcl]: Setting pose (25.700000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791100728.098611870] [amcl]: Creating bond (amcl) to lifecycle manager.
+[lifecycle_manager-3] [INFO] [1791100728.215237270] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-3] [INFO] [1791100728.215329542] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-3] [INFO] [1791100728.215430672] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[lifecycle_manager-11] [INFO] [1791100728.585307302] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-11] [INFO] [1791100728.585364585] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-4] [INFO] [1791100728.585805307] [controller_server]: Configuring controller interface
+[controller_server-4] [INFO] [1791100728.586219896] [controller_server]: getting goal checker plugins..
+[controller_server-4] [INFO] [1791100728.587872615] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-4] [INFO] [1791100728.587931772] [local_costmap.local_costmap]: Configuring
+[controller_server-4] [INFO] [1791100728.605097479] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-4] [INFO] [1791100728.609892923] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-4] [INFO] [1791100728.617836732] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-4] [INFO] [1791100728.617899456] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-4] [INFO] [1791100728.619750998] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-4] [INFO] [1791100728.652364454] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-4] [INFO] [1791100728.653021344] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-4] [INFO] [1791100728.654902795] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-4] [INFO] [1791100728.655750401] [controller_server]: Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+[controller_server-4] [INFO] [1791100728.657019841] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[controller_server-4] [INFO] [1791100728.660110212] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[controller_server-4] [INFO] [1791100728.660319035] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[controller_server-4] [INFO] [1791100728.662130597] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.011811 weights. Critic will collision check based on footprint cost.
+[controller_server-4] [INFO] [1791100728.662189504] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[controller_server-4] [INFO] [1791100728.662541380] [controller_server]: GoalCritic instantiated with 1 power and 6.000000 weight.
+[controller_server-4] [INFO] [1791100728.662563804] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[controller_server-4] [INFO] [1791100728.662668942] [controller_server]: GoalAngleCritic instantiated with 1 power, 5.000000 weight, and 1.000000 angular threshold.
+[controller_server-4] [INFO] [1791100728.662681867] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[controller_server-4] [INFO] [1791100728.662923215] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 8.000000 weight
+[controller_server-4] [INFO] [1791100728.662946220] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[controller_server-4] [INFO] [1791100728.663275101] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[controller_server-4] [INFO] [1791100728.663384637] [controller_server]: TwirlingCritic instantiated with 1 power and 4.000000 weight.
+[controller_server-4] [INFO] [1791100728.663397122] [controller_server]: Critic loaded : mppi::critics::TwirlingCritic
+[controller_server-4] [INFO] [1791100728.668116715] [controller_server]: Optimizer reset
+[controller_server-4] [INFO] [1791100728.673953327] [MPPIController]: Configured MPPI Controller: FollowPath
+[controller_server-4] [INFO] [1791100728.673984279] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-11] [INFO] [1791100728.692566517] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-5] [INFO] [1791100728.693082868] [smoother_server]: Configuring smoother server
+[INFO] [initial_pose_publisher-12]: process started with pid [6378]
+[smoother_server-5] [INFO] [1791100728.715898329] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-5] [INFO] [1791100728.718341129] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-11] [INFO] [1791100728.753877196] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1791100728.754590387] [planner_server]: Configuring
+[planner_server-6] [INFO] [1791100728.754631227] [global_costmap.global_costmap]: Configuring
+[planner_server-6] [INFO] [1791100728.780227066] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-6] [INFO] [1791100728.783988675] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-6] [INFO] [1791100728.789685811] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-6] [INFO] [1791100728.789894544] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-6] [INFO] [1791100728.790186190] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-6] [INFO] [1791100728.797592918] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-6] [INFO] [1791100728.797648939] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-6] [INFO] [1791100728.802981716] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-6] [INFO] [1791100728.831704938] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-6] [INFO] [1791100728.831760087] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1791100728.833009057] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 124 X 176 at 0.025000 m/pix
+[planner_server-6] [INFO] [1791100728.834842331] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-11] [INFO] [1791100728.871798917] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-7] [INFO] [1791100728.872638318] [behavior_server]: Configuring
+[behavior_server-7] [INFO] [1791100728.909466850] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-7] [INFO] [1791100728.910302583] [behavior_server]: Configuring spin
+[behavior_server-7] [INFO] [1791100728.931756931] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-7] [INFO] [1791100728.932589287] [behavior_server]: Configuring backup
+[behavior_server-7] [INFO] [1791100728.940679547] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-7] [INFO] [1791100728.945139818] [behavior_server]: Configuring drive_on_heading
+[behavior_server-7] [INFO] [1791100728.961792982] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-7] [INFO] [1791100728.963975298] [behavior_server]: Configuring assisted_teleop
+[amcl-2] [INFO] [1791100728.972590715] [amcl]: createLaserObject
+[behavior_server-7] [INFO] [1791100728.991075761] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-7] [INFO] [1791100728.992425470] [behavior_server]: Configuring wait
+[lifecycle_manager-11] [INFO] [1791100729.018145644] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1791100729.018954143] [bt_navigator]: Configuring
+[lifecycle_manager-11] [INFO] [1791100729.288282448] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1791100729.288549136] [waypoint_follower]: Configuring
+[waypoint_follower-9] [INFO] [1791100729.353671121] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-11] [INFO] [1791100729.360442812] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1791100729.364466258] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-11] [INFO] [1791100729.402758596] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-4] [INFO] [1791100729.406972489] [controller_server]: Activating
+[controller_server-4] [INFO] [1791100729.407273054] [local_costmap.local_costmap]: Activating
+[controller_server-4] [INFO] [1791100729.407295688] [local_costmap.local_costmap]: Checking transform
+[controller_server-4] [INFO] [1791100729.407747732] [local_costmap.local_costmap]: start
+[controller_server-4] [WARN] [1791100729.632359087] [controller_server]: Parameter controller_server.verbose not found
+[controller_server-4] [INFO] [1791100729.635431473] [controller_server]: Optimizer reset
+[controller_server-4] [INFO] [1791100729.637403663] [MPPIController]: Activated MPPI Controller: FollowPath
+[controller_server-4] [INFO] [1791100729.637447349] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[initial_pose_publisher-12] [INFO] [1791100729.695379517] [initial_pose_publisher]: Publishing initial pose for AMCL.
+[lifecycle_manager-11] [INFO] [1791100729.751349393] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-11] [INFO] [1791100729.751459792] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-5] [INFO] [1791100729.752124887] [smoother_server]: Activating
+[smoother_server-5] [INFO] [1791100729.752178463] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1791100729.881673080] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-11] [INFO] [1791100729.881765593] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-6] [INFO] [1791100729.882395840] [planner_server]: Activating
+[planner_server-6] [INFO] [1791100729.882446600] [global_costmap.global_costmap]: Activating
+[planner_server-6] [INFO] [1791100729.882459566] [global_costmap.global_costmap]: Checking transform
+[planner_server-6] [INFO] [1791100729.882714670] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 26.900000 but the earliest data is at time 27.217000, when looking up transform from frame [base_footprint] to frame [map]
+[amcl-2] [INFO] [1791100730.221227156] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100730.221346121] [amcl]: Setting pose (27.100000): -0.000 -0.000 -0.000
+[planner_server-6] [INFO] [1791100730.384677313] [global_costmap.global_costmap]: start
+[amcl-2] [INFO] [1791100730.597620562] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100730.599210747] [amcl]: Setting pose (27.500000): -0.000 0.000 0.000
+[amcl-2] [INFO] [1791100731.135111578] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1791100731.135220954] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 28.000000 but the latest data is at time 27.990000, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1791100731.135229802] [amcl]: Setting pose (28.000000): 0.000 0.000 0.000
+[planner_server-6] [INFO] [1791100731.404642182] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1791100731.412482291] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1791100731.543546451] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-11] [INFO] [1791100731.544491469] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-7] [INFO] [1791100731.545193347] [behavior_server]: Activating
+[behavior_server-7] [INFO] [1791100731.545252474] [behavior_server]: Activating spin
+[behavior_server-7] [INFO] [1791100731.545270520] [behavior_server]: Activating backup
+[behavior_server-7] [INFO] [1791100731.545280109] [behavior_server]: Activating drive_on_heading
+[behavior_server-7] [INFO] [1791100731.545289467] [behavior_server]: Activating assisted_teleop
+[behavior_server-7] [INFO] [1791100731.545299167] [behavior_server]: Activating wait
+[behavior_server-7] [INFO] [1791100731.545317483] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1791100731.667237031] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-11] [INFO] [1791100731.667321819] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1791100731.667969129] [bt_navigator]: Activating
+[amcl-2] [INFO] [1791100731.728032160] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100731.728223108] [amcl]: Setting pose (28.500000): -0.000 -0.000 0.000
+[bt_navigator-8] [INFO] [1791100732.078762689] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1791100732.195164256] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-11] [INFO] [1791100732.195248733] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1791100732.195929279] [waypoint_follower]: Activating
+[waypoint_follower-9] [INFO] [1791100732.195976903] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1791100732.314303958] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-11] [INFO] [1791100732.314428815] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1791100732.320082596] [velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1791100732.320929150] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[amcl-2] [INFO] [1791100732.423342121] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100732.423411699] [amcl]: Setting pose (29.000000): -0.000 -0.000 -0.000
+[lifecycle_manager-11] [INFO] [1791100732.467014728] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-11] [INFO] [1791100732.467163913] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-11] [INFO] [1791100732.467183051] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[amcl-2] [INFO] [1791100732.975987508] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100732.976766117] [amcl]: Setting pose (29.500000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791100733.722111284] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100733.722187335] [amcl]: Setting pose (30.000000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791100734.426105879] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1791100734.426225505] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 30.500000 but the latest data is at time 30.490000, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1791100734.426244583] [amcl]: Setting pose (30.500000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791100735.169977001] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100735.170061448] [amcl]: Setting pose (31.000000): 0.000 0.000 0.000
+[initial_pose_publisher-12] [INFO] [1791100735.710164055] [initial_pose_publisher]: Initial pose published.
+[amcl-2] [INFO] [1791100735.712040736] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791100735.712114662] [amcl]: Setting pose (31.500000): 0.000 0.000 0.000
+[bt_navigator-8] [INFO] [1791100735.725874023] [bt_navigator]: Begin navigating from current location (0.02, -0.01) to (0.00, -1.35)
+[controller_server-4] [INFO] [1791100735.747981132] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [WARN] [1791100735.748036562] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-4] [INFO] [1791100735.750637125] [controller_server]: Optimizer reset
+[controller_server-4] [INFO] [1791100736.798711820] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100737.798823418] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100738.453831500] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1791100738.487571620] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1791100740.072609858] [bt_navigator]: Begin navigating from current location (0.04, -1.31) to (0.00, -2.70)
+[controller_server-4] [INFO] [1791100740.093683303] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791100740.097914651] [controller_server]: Optimizer reset
+[controller_server-4] [INFO] [1791100741.143982654] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100742.143978294] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100743.150067620] [controller_server]: Reached the goal!
+[controller_server-4] [INFO] [1791100743.154365279] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791100743.158785360] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1791100743.194120890] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1791100763.732686385] [bt_navigator]: Begin navigating from current location (0.01, -2.69) to (1.10, -1.93)
+[controller_server-4] [INFO] [1791100763.756465912] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791100763.757782616] [controller_server]: Optimizer reset
+[controller_server-4] [INFO] [1791100764.807070535] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100765.806756552] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100766.712333166] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1791100766.745187349] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1791100774.523746047] [bt_navigator]: Begin navigating from current location (1.07, -1.97) to (1.17, -0.78)
+[controller_server-4] [INFO] [1791100774.548446906] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791100774.549877044] [controller_server]: Optimizer reset
+[controller_server-4] [INFO] [1791100775.599142891] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100776.598929858] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100777.648878937] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100777.653573211] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1791100777.695232927] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1791100784.911791070] [bt_navigator]: Begin navigating from current location (1.17, -0.68) to (0.00, 0.00)
+[controller_server-4] [INFO] [1791100784.934092814] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791100784.935412394] [controller_server]: Optimizer reset
+[controller_server-4] [INFO] [1791100785.984864964] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100787.034407205] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791100787.690538463] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1791100787.723549326] [bt_navigator]: Goal succeeded
+[map_server-1] [WARN] [1791102118.233464699] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_server-1] [WARN] [1791102118.233694346] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_server-1] [ERROR] [1791102118.233763004] [map_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[controller_server-4] [WARN] [1791102121.164196366] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-4] [WARN] [1791102121.164449136] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-4] [ERROR] [1791102121.164483140] [controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[amcl-2] [INFO] [1791102127.117394663] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791102127.124269770] [amcl]: Setting pose (1309.500000): 0.000 -0.000 0.000
+[amcl-2] [INFO] [1791102128.694473433] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1791102128.695257821] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1310.000000 but the latest data is at time 1309.990000, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1791102128.695284030] [amcl]: Setting pose (1310.000000): 0.000 0.000 0.000
+[bt_navigator-8] [INFO] [1791102129.559454924] [bt_navigator]: Begin navigating from current location (0.01, -0.07) to (0.00, -1.35)
+[bt_navigator-8] [WARN] [1791102129.701184857] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[bt_navigator-8] [WARN] [1791102129.746565827] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[controller_server-4] [INFO] [1791102129.784834622] [controller_server]: Received a goal, begin computing control effort.
+[bt_navigator-8] [WARN] [1791102129.794772429] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[bt_navigator-8] [ERROR] [1791102129.949039481] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[bt_navigator-8] [WARN] [1791102129.978631281] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[bt_navigator-8] [ERROR] [1791102129.978838015] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[controller_server-4] [INFO] [1791102129.981291695] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[bt_navigator-8] [ERROR] [1791102129.997168221] [BehaviorTreeEngine]: Behavior tree threw exception: BtActionNode::Tick: invalid status value. Exiting with failure.
+[bt_navigator-8] [WARN] [1791102129.997629288] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[controller_server-4] [INFO] [1791102130.007071600] [controller_server]: Optimizer reset
+[bt_navigator-8] [ERROR] [1791102130.020257726] [bt_navigator]: Goal failed
+[amcl-2] [INFO] [1791102130.070416907] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791102130.070486476] [amcl]: Setting pose (1310.500000): -0.000 -0.000 0.000
+[controller_server-4] [ERROR] [1791102130.097213250] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102130.097322333] [tf_help]: Data time: 1310s 300000000ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102130.097360033] [controller_server]: Reached the goal!
+[controller_server-4] [INFO] [1791102130.097453186] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [ERROR] [1791102130.150833408] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102130.150883200] [tf_help]: Data time: 1310s 300000000ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102130.150893279] [controller_server]: Reached the goal!
+[amcl-2] [INFO] [1791102130.936162677] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1791102130.936839003] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1311.000000 but the latest data is at time 1310.990000, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1791102130.937014740] [amcl]: Setting pose (1311.000000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791102131.562297925] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791102131.562366893] [amcl]: Setting pose (1311.500000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791102132.195010045] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791102132.195080816] [amcl]: Setting pose (1312.000000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791102132.773719038] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1791102132.773890817] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1312.500000 but the latest data is at time 1312.490000, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1791102132.773912527] [amcl]: Setting pose (1312.500000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1791102133.370880287] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1791102133.370945628] [amcl]: Setting pose (1313.000000): 0.000 0.000 0.000
+[bt_navigator-8] [INFO] [1791102135.091526524] [bt_navigator]: Begin navigating from current location (0.01, -0.01) to (0.00, -2.70)
+[bt_navigator-8] [ERROR] [1791102135.114157418] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown result response, ignoring...
+[bt_navigator-8] [ERROR] [1791102135.115866503] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[controller_server-4] [INFO] [1791102135.118540401] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791102135.121752518] [controller_server]: Optimizer reset
+[bt_navigator-8] [ERROR] [1791102135.122889561] [BehaviorTreeEngine]: Behavior tree threw exception: BtActionNode::Tick: invalid status value. Exiting with failure.
+[bt_navigator-8] [WARN] [1791102135.126269320] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[bt_navigator-8] [ERROR] [1791102135.126533771] [bt_navigator]: Goal failed
+[controller_server-4] [ERROR] [1791102135.130632485] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102135.130683911] [tf_help]: Data time: 1314s 400000000ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102135.130694440] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1791102140.262416686] [bt_navigator]: Begin navigating from current location (0.01, -0.01) to (1.10, -1.93)
+[bt_navigator-8] [ERROR] [1791102140.285067659] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown result response, ignoring...
+[controller_server-4] [INFO] [1791102140.290022943] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791102140.294550102] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[bt_navigator-8] [ERROR] [1791102140.296059025] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[controller_server-4] [INFO] [1791102140.297614985] [controller_server]: Optimizer reset
+[bt_navigator-8] [ERROR] [1791102140.298092763] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[bt_navigator-8] [WARN] [1791102140.298961777] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[controller_server-4] [ERROR] [1791102140.303866717] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102140.304511255] [tf_help]: Data time: 1318s 700000000ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102140.304593848] [controller_server]: Reached the goal!
+[controller_server-4] [INFO] [1791102140.305834312] [controller_server]: Received a goal, begin computing control effort.
+[bt_navigator-8] [ERROR] [1791102140.325010170] [BehaviorTreeEngine]: Behavior tree threw exception: BtActionNode::Tick: invalid status value. Exiting with failure.
+[bt_navigator-8] [WARN] [1791102140.325092102] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[bt_navigator-8] [ERROR] [1791102140.325376180] [bt_navigator]: Goal failed
+[controller_server-4] [ERROR] [1791102140.420543900] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102140.420597710] [tf_help]: Data time: 1318s 700000000ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102140.420606486] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1791102145.458985969] [bt_navigator]: Begin navigating from current location (0.01, -0.01) to (1.17, -0.78)
+[controller_server-4] [INFO] [1791102145.481537580] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1791102145.483498638] [controller_server]: Optimizer reset
+[bt_navigator-8] [ERROR] [1791102145.484537150] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown result response, ignoring...
+[controller_server-4] [ERROR] [1791102145.496695810] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102145.496745712] [tf_help]: Data time: 1323s 0ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102145.496755160] [controller_server]: Reached the goal!
+[bt_navigator-8] [ERROR] [1791102145.519379014] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[bt_navigator-8] [ERROR] [1791102145.530727950] [BehaviorTreeEngine]: Behavior tree threw exception: BtActionNode::Tick: invalid status value. Exiting with failure.
+[bt_navigator-8] [ERROR] [1791102145.530793833] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown result response, ignoring...
+[bt_navigator-8] [WARN] [1791102145.530818308] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[bt_navigator-8] [ERROR] [1791102145.533493015] [bt_navigator]: Goal failed
+[bt_navigator-8] [INFO] [1791102150.688765125] [bt_navigator]: Begin navigating from current location (0.01, -0.01) to (0.00, 0.00)
+[controller_server-4] [INFO] [1791102150.711301629] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-4] [INFO] [1791102150.711410210] [controller_server]: Received a goal, begin computing control effort.
+[bt_navigator-8] [ERROR] [1791102150.712774914] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[controller_server-4] [INFO] [1791102150.714704552] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-6] [INFO] [1791102150.718889909] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[bt_navigator-8] [WARN] [1791102150.721961020] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[controller_server-4] [INFO] [1791102150.813685639] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1791102150.816483083] [controller_server]: Optimizer reset
+[controller_server-4] [ERROR] [1791102150.827666177] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102150.827755082] [tf_help]: Data time: 1327s 400000000ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102150.827767956] [controller_server]: Reached the goal!
+[planner_server-6] [WARN] [1791102151.390764584] [planner_server]: Planner loop missed its desired rate of 5.0000 Hz. Current loop rate is 2.0000 Hz
+[bt_navigator-8] [ERROR] [1791102151.409713085] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[controller_server-4] [INFO] [1791102151.410827083] [controller_server]: Received a goal, begin computing control effort.
+[bt_navigator-8] [ERROR] [1791102151.422851418] [bt_navigator_navigate_to_pose_rclcpp_node.rclcpp_action]: unknown goal response, ignoring...
+[bt_navigator-8] [ERROR] [1791102151.430302052] [BehaviorTreeEngine]: Behavior tree threw exception: BtActionNode::Tick: invalid status value. Exiting with failure.
+[bt_navigator-8] [WARN] [1791102151.430399914] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[bt_navigator-8] [ERROR] [1791102151.432637739] [bt_navigator]: Goal failed
+[controller_server-4] [ERROR] [1791102151.434116033] [tf_help]: Transform data too old when converting from map to odom
+[controller_server-4] [ERROR] [1791102151.434158763] [tf_help]: Data time: 1327s 900000000ns, Transform time: 184s 687000000ns
+[controller_server-4] [INFO] [1791102151.434169543] [controller_server]: Reached the goal!

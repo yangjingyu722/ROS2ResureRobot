@@ -1,0 +1,77 @@
+[INFO] [launch]: All log files can be found below /home/yjy/.ros/log/2026-10-04-15-58-52-884540-yjy-virtual-machine-6416
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [referee_node-1]: process started with pid [6417]
+[INFO] [ring_aim_node-2]: process started with pid [6419]
+[referee_node-1] [INFO] [1791100733.781086053] [referee_node]: 裁判计分已启动：/referee/score、/referee/score_detail、/referee/events
+[referee_node-1] [INFO] [1791100733.781950402] [referee_node]: 当前总分：0/90
+[INFO] [full_mission_node-3]: process started with pid [6431]
+[ring_aim_node-2] [INFO] [1791100734.455670455] [ring_aim_node]: Ring aim example: /camera/image -> /ring_target/center_offset
+[full_mission_node-3] [INFO] [1791100735.220423785] [full_mission_node]: 已发布目标计划：task_1=target_fixed,id=0;task_2=target_wheel,id=1;task_3=target_moving_3,id=6;task_4=target_moving_4,id=8
+[full_mission_node-3] [INFO] [1791100735.221090143] [full_mission_node]: 完整任务已准备：1 号环靶 -> 2 号旋转靶 -> 3/4 号移动靶 -> 返回指挥中心。
+[full_mission_node-3] [INFO] [1791100735.397775908] [full_mission_node]: map->odom TF 不新鲜，暂缓发送导航目标...
+[full_mission_node-3] [INFO] [1791100735.710972704] [full_mission_node]: map->odom TF 已恢复，继续发送导航目标。
+[full_mission_node-3] [INFO] [1791100735.716612206] [full_mission_node]: 发送导航目标：1 号任务点（第 1 次尝试）(0.000, -1.350, 0.000)
+[referee_node-1] [INFO] [1791100735.783239390] [referee_node]: 当前总分：0/90
+[referee_node-1] [INFO] [1791100735.784739296] [referee_node]: 计分已重置
+[referee_node-1] [INFO] [1791100735.785318421] [referee_node]: 当前总分：0/90
+[full_mission_node-3] [INFO] [1791100735.786238040] [full_mission_node]: 已清零裁判计分，本轮任务重新开始计分。
+[full_mission_node-3] [INFO] [1791100738.586654031] [full_mission_node]: 已到达 1 号任务点。
+[full_mission_node-3] [INFO] [1791100738.587152698] [full_mission_node]: 已通知裁判当前点位：shoot_1
+[full_mission_node-3] [INFO] [1791100738.587721262] [full_mission_node]: 开始瞄准 1 号任务点。
+[referee_node-1] [INFO] [1791100738.593834121] [referee_node]: 到达 1 号任务点：+10 分
+[referee_node-1] [INFO] [1791100738.594936541] [referee_node]: 当前总分：10/90
+[full_mission_node-3] [INFO] [1791100738.805549600] [full_mission_node]: 已在 1 号任务点 调用射击服务。
+[full_mission_node-3] [INFO] [1791100738.810127022] [full_mission_node]: 射击结果：success=True, message='bullet_598c2e0806'
+[referee_node-1] [INFO] [1791100739.044114426] [referee_node]: 命中 1 号任务目标：+10 分 (impact_y=0.009, impact_z=-0.000)
+[referee_node-1] [INFO] [1791100739.044525630] [referee_node]: 当前总分：20/90
+[full_mission_node-3] [INFO] [1791100739.063155953] [full_mission_node]: 裁判确认 1 号任务点 已命中，跳过补射。
+[full_mission_node-3] [INFO] [1791100740.069454187] [full_mission_node]: 发送导航目标：2 号任务点（第 1 次尝试）(0.000, -2.700, 0.000)
+[full_mission_node-3] [INFO] [1791100743.250780611] [full_mission_node]: 已到达 2 号任务点。
+[full_mission_node-3] [INFO] [1791100743.253048355] [full_mission_node]: 已通知裁判当前点位：shoot_2
+[full_mission_node-3] [INFO] [1791100743.254119443] [full_mission_node]: 开始瞄准 2 号任务点，目标 id=1。
+[referee_node-1] [INFO] [1791100743.258473745] [referee_node]: 到达 2 号任务点：+10 分
+[referee_node-1] [INFO] [1791100743.259123209] [referee_node]: 当前总分：30/90
+[full_mission_node-3] [INFO] [1791100762.380524242] [full_mission_node]: 已在 2 号任务点 调用射击服务。
+[full_mission_node-3] [INFO] [1791100762.381427197] [full_mission_node]: 射击结果：success=True, message='bullet_5bf6a5f5af'
+[referee_node-1] [INFO] [1791100762.605124452] [referee_node]: 命中 2 号任务目标：+10 分 (impact_y=-0.006, impact_z=0.071)
+[referee_node-1] [INFO] [1791100762.608450358] [referee_node]: 当前总分：40/90
+[full_mission_node-3] [INFO] [1791100762.715620260] [full_mission_node]: 裁判确认 2 号任务点 已命中，跳过补射。
+[referee_node-1] [INFO] [1791100762.827121676] [referee_node]: 2 号点弹道经过靶面但未命中指定区域 (impact_y=-0.055, impact_z=0.046)
+[referee_node-1] [INFO] [1791100762.827683657] [referee_node]: 检测 2 号点子弹：bullet_a379e4d66a
+[referee_node-1] [INFO] [1791100763.727266527] [referee_node]: 2 号点：子弹穿过靶面但未进计分区 (impact_y=0.067, impact_z=-0.459) 需要≈叶片中心 y=0.000, z=0.090 各±0.045
+[full_mission_node-3] [INFO] [1791100763.728943814] [full_mission_node]: 发送导航目标：3 号任务点（第 1 次尝试）(1.105, -1.925, -1.571)
+[full_mission_node-3] [INFO] [1791100766.752405414] [full_mission_node]: 已到达 3 号任务点。
+[full_mission_node-3] [INFO] [1791100766.758206315] [full_mission_node]: 已通知裁判当前点位：shoot_3
+[full_mission_node-3] [INFO] [1791100766.759974863] [full_mission_node]: 开始瞄准 3 号任务点，目标 id=6。
+[referee_node-1] [INFO] [1791100766.758393526] [referee_node]: 到达 3 号任务点：+10 分
+[referee_node-1] [INFO] [1791100766.762228500] [referee_node]: 当前总分：50/90
+[referee_node-1] [INFO] [1791100769.607943210] [referee_node]: 2 号点未检测到有效命中：bullet_a379e4d66a（子弹最后位置 x=1.81,y=0.35,z=0.02；靶 x=1.57,y=-2.70,z=0.26；弹相对靶面局部 x=0.24,y=-3.04,z=0.36）
+[full_mission_node-3] [INFO] [1791100772.947952023] [full_mission_node]: 已在 3 号任务点 调用射击服务。
+[full_mission_node-3] [INFO] [1791100772.950919241] [full_mission_node]: 射击结果：success=True, message='bullet_9a1bf09440'
+[referee_node-1] [INFO] [1791100773.107762876] [referee_node]: 3 号点弹道经过靶面但未命中指定区域 (impact_y=-0.120, impact_z=0.000)
+[referee_node-1] [INFO] [1791100773.109154578] [referee_node]: 检测 3 号点子弹：bullet_9a1bf09440
+[referee_node-1] [INFO] [1791100773.325437180] [referee_node]: 命中 3 号任务目标：+10 分 (impact_y=-0.062, impact_z=0.000)
+[referee_node-1] [INFO] [1791100773.330302111] [referee_node]: 当前总分：60/90
+[full_mission_node-3] [INFO] [1791100773.422262112] [full_mission_node]: 裁判确认 3 号任务点 已命中，跳过补射。
+[full_mission_node-3] [INFO] [1791100774.520505068] [full_mission_node]: 发送导航目标：4 号任务点（第 1 次尝试）(1.165, -0.775, 1.571)
+[full_mission_node-3] [INFO] [1791100777.732422344] [full_mission_node]: 已到达 4 号任务点。
+[full_mission_node-3] [INFO] [1791100777.734097076] [full_mission_node]: 已通知裁判当前点位：shoot_4
+[full_mission_node-3] [INFO] [1791100777.734600842] [full_mission_node]: 开始瞄准 4 号任务点，目标 id=8。
+[referee_node-1] [INFO] [1791100777.735841145] [referee_node]: 到达 4 号任务点：+10 分
+[referee_node-1] [INFO] [1791100777.736916431] [referee_node]: 当前总分：70/90
+[referee_node-1] [INFO] [1791100779.894455751] [referee_node]: 3 号点未检测到有效命中：bullet_9a1bf09440
+[full_mission_node-3] [INFO] [1791100783.666976388] [full_mission_node]: 已在 4 号任务点 调用射击服务。
+[full_mission_node-3] [INFO] [1791100783.668919701] [full_mission_node]: 射击结果：success=True, message='bullet_8091142b42'
+[referee_node-1] [INFO] [1791100783.813530523] [referee_node]: 命中 4 号任务目标：+10 分 (impact_y=0.064, impact_z=-0.000)
+[referee_node-1] [INFO] [1791100783.815728539] [referee_node]: 当前总分：80/90
+[full_mission_node-3] [INFO] [1791100783.887810259] [full_mission_node]: 裁判确认 4 号任务点 已命中，跳过补射。
+[full_mission_node-3] [INFO] [1791100784.907070104] [full_mission_node]: 发送导航目标：指挥中心（第 1 次尝试）(0.000, 0.000, 0.000)
+[referee_node-1] [INFO] [1791100786.936434362] [referee_node]: 检测到机器人返回指挥中心：+10 分
+[referee_node-1] [INFO] [1791100786.937116160] [referee_node]: 当前总分：90/90
+[full_mission_node-3] [INFO] [1791100787.806303420] [full_mission_node]: 已到达 指挥中心。
+[full_mission_node-3] [INFO] [1791100787.806802367] [full_mission_node]: 完整任务完成，机器人已返回指挥中心。
+[referee_node-1] [INFO] [1791102128.256312114] [referee_node]: 当前总分：90/90
+[referee_node-1] [INFO] [1791102129.528775942] [referee_node]: 计分已重置
+[referee_node-1] [INFO] [1791102129.589297178] [referee_node]: 当前总分：0/90
+[referee_node-1] [INFO] [1791102151.558124385] [referee_node]: 任务节点确认成功返回指挥中心：+10 分
+[referee_node-1] [INFO] [1791102151.559995318] [referee_node]: 当前总分：10/90

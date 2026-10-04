@@ -1,0 +1,40 @@
+[0.000000] (-) TimerEvent: {}
+[0.001513] (-) JobUnselected: {'identifier': 'ican_example_navigation'}
+[0.001564] (-) JobUnselected: {'identifier': 'ican_example_ring_aim'}
+[0.001577] (-) JobUnselected: {'identifier': 'ican_referee_system'}
+[0.001587] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.001620] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.001635] (ican_example_mission) JobQueued: {'identifier': 'ican_example_mission', 'dependencies': OrderedDict([('ican_example_ring_aim', '/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim'), ('ican_referee_system', '/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system'), ('navigation2', '/home/yjy/ican_shoot/ican_shoot/install/navigation2'), ('nav2_bringup', '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup'), ('ican_example_navigation', '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation')])}
+[0.001683] (ican_example_mission) JobStarted: {'identifier': 'ican_example_mission'}
+[0.100279] (-) TimerEvent: {}
+[0.200637] (-) TimerEvent: {}
+[0.301336] (-) TimerEvent: {}
+[0.402153] (-) TimerEvent: {}
+[0.502864] (-) TimerEvent: {}
+[0.603337] (-) TimerEvent: {}
+[0.704445] (-) TimerEvent: {}
+[0.805111] (-) TimerEvent: {}
+[0.832681] (ican_example_mission) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/build', '--no-deps', 'symlink_data'], 'cwd': '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission', 'env': OrderedDict([('PYTHONIOENCODING', 'utf-8'), ('ZAI_OAUTH_CLIENT_ID', 'client_P8X5CMWmlaRO9gyO-KSqtg'), ('ZCODE_DESKTOP_CONTEXT_PROMPT_ENABLED', '1'), ('USER', 'yjy'), ('SSH_CLIENT', '192.168.107.1 58729 22'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ican_shoot_sim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yjy'), ('ZCODE_SERVICE_AUTHORITY_MODE', 'desktop-attached-remote'), ('OLDPWD', '/home/yjy/ican_shoot/ican_shoot'), ('ZAI_OAUTH_ORIGIN', 'https://chat.z.ai'), ('ZCODE_APP_VERSION', '3.14.3'), ('ROS_PYTHON_VERSION', '3'), ('ZCODE_SERVER_RUNTIME_ROOT', '/home/yjy/.zcode/server'), ('LC_CTYPE', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/opt/ican_shoot_sim'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yjy'), ('ZCODE_RUNTIME_ENV', 'production'), ('ZCODE_PERSONAL_PROVIDER_CONFIG_FILE', '/home/yjy/.zcode/v2/provider_config.json'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ZCODE_BUILTIN_PROVIDER_CONFIG_FILE', '/home/yjy/.zcode/v2/runtime/provider/linux-x86_64/3.14.3/endpoint-78d7c3bef4024722642626fe3669a799/zcode-builtin.json'), ('ZAI_BUSINESS_BASE_URL', 'https://api.z.ai'), ('TERM', 'dumb'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yjy/.zcode/server/tools/bfs:/home/yjy/.zcode/server/tools/ripgrep:/home/yjy/.zcode/server/tools/ugrep'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZCODE_BFS_BINARY', '/home/yjy/.zcode/server/tools/bfs/bfs'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation:/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim:/opt/ican_shoot_sim:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PYTHONUTF8', '1'), ('ZCODE_WORKSPACE_IDENTITY', 'remote:ssh:192.168.107.148:22:yjy:/home/yjy/ican_shoot'), ('PWD', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission'), ('LC_ALL', 'en_US.UTF-8'), ('ZCODE_BASE_URL', 'https://zcode.z.ai'), ('SSH_CONNECTION', '192.168.107.1 58729 192.168.107.148 22'), ('ZCODE_RG_BINARY', '/home/yjy/.zcode/server/tools/ripgrep/rg'), ('PYTHONPATH', '/home/yjy/ican_shoot/ican_shoot/build/ican_example_mission/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_example_navigation:/home/yjy/ican_shoot/ican_shoot/install/ican_example_navigation/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:/home/yjy/ican_shoot/ican_shoot/build/ican_example_ring_aim:/home/yjy/ican_shoot/ican_shoot/install/ican_example_ring_aim/lib/python3.10/site-packages:/opt/ican_shoot_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ZCODE_UGREP_BINARY', '/home/yjy/.zcode/server/tools/ugrep/ugrep'), ('ZCODE_ENV', 'production'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yjy/ican_shoot/ican_shoot/install/nav2_bringup:/home/yjy/ican_shoot/ican_shoot/install/navigation2:/opt/ican_shoot_sim')]), 'shell': False}
+[0.905464] (-) TimerEvent: {}
+[1.006259] (-) TimerEvent: {}
+[1.051254] (ican_example_mission) StdoutLine: {'line': b'running develop\n'}
+[1.106725] (-) TimerEvent: {}
+[1.173477] (ican_example_mission) StdoutLine: {'line': b'running egg_info\n'}
+[1.173621] (ican_example_mission) StdoutLine: {'line': b'writing ican_example_mission.egg-info/PKG-INFO\n'}
+[1.173935] (ican_example_mission) StdoutLine: {'line': b'writing dependency_links to ican_example_mission.egg-info/dependency_links.txt\n'}
+[1.174169] (ican_example_mission) StdoutLine: {'line': b'writing entry points to ican_example_mission.egg-info/entry_points.txt\n'}
+[1.174448] (ican_example_mission) StdoutLine: {'line': b'writing requirements to ican_example_mission.egg-info/requires.txt\n'}
+[1.174758] (ican_example_mission) StdoutLine: {'line': b'writing top-level names to ican_example_mission.egg-info/top_level.txt\n'}
+[1.176713] (ican_example_mission) StdoutLine: {'line': b"reading manifest file 'ican_example_mission.egg-info/SOURCES.txt'\n"}
+[1.177512] (ican_example_mission) StdoutLine: {'line': b"writing manifest file 'ican_example_mission.egg-info/SOURCES.txt'\n"}
+[1.179469] (ican_example_mission) StdoutLine: {'line': b'running build_ext\n'}
+[1.179652] (ican_example_mission) StdoutLine: {'line': b'Creating /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/python3.10/site-packages/ican-example-mission.egg-link (link to .)\n'}
+[1.180686] (ican_example_mission) StdoutLine: {'line': b'Installing full_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission\n'}
+[1.181255] (ican_example_mission) StdoutLine: {'line': b'Installing one_target_mission_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_example_mission/lib/ican_example_mission\n'}
+[1.181521] (ican_example_mission) StdoutLine: {'line': b'\n'}
+[1.181586] (ican_example_mission) StdoutLine: {'line': b'Installed /home/yjy/ican_shoot/ican_shoot/build/ican_example_mission\n'}
+[1.181621] (ican_example_mission) StdoutLine: {'line': b'running symlink_data\n'}
+[1.207227] (-) TimerEvent: {}
+[1.225599] (ican_example_mission) CommandEnded: {'returncode': 0}
+[1.237173] (ican_example_mission) JobEnded: {'identifier': 'ican_example_mission', 'rc': 0}
+[1.237977] (-) EventReactorShutdown: {}

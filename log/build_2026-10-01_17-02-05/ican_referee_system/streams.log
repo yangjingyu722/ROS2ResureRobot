@@ -1,0 +1,17 @@
+[1.551s] Invoking command in '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build --no-deps symlink_data
+[1.835s] running develop
+[1.979s] running egg_info
+[1.979s] writing ican_referee_system.egg-info/PKG-INFO
+[1.980s] writing dependency_links to ican_referee_system.egg-info/dependency_links.txt
+[1.980s] writing entry points to ican_referee_system.egg-info/entry_points.txt
+[1.981s] writing requirements to ican_referee_system.egg-info/requires.txt
+[1.981s] writing top-level names to ican_referee_system.egg-info/top_level.txt
+[1.985s] reading manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+[1.988s] writing manifest file 'ican_referee_system.egg-info/SOURCES.txt'
+[1.988s] running build_ext
+[1.988s] Creating /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages/ican-referee-system.egg-link (link to .)
+[1.990s] Installing referee_node script to /home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/ican_referee_system
+[1.992s] 
+[1.992s] Installed /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system
+[1.993s] running symlink_data
+[2.049s] Invoked command in '/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system' returned '0': PYTHONPATH=/home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjy/ican_shoot/ican_shoot/install/ican_referee_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjy/ican_shoot/ican_shoot/build/ican_referee_system/build --no-deps symlink_data

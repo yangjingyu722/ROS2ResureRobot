@@ -1,9 +1,16 @@
+import json
 import math
 import time
 
 from action_msgs.msg import GoalStatus
 from gazebo_msgs.msg import ModelStates
-from geometry_msgs.msg import PointStamped, PoseStamped, Quaternion, Twist
+from geometry_msgs.msg import (
+    PointStamped,
+    PoseStamped,
+    PoseWithCovarianceStamped,
+    Quaternion,
+    Twist,
+)
 from nav2_msgs.action import NavigateToPose
 import rclpy
 from rclpy.action import ActionClient
@@ -13,6 +20,7 @@ from rclpy.node import Node
 from rclpy.qos import DurabilityPolicy, QoSProfile, ReliabilityPolicy, qos_profile_sensor_data
 from std_msgs.msg import String
 from std_srvs.srv import Trigger
+from tf2_msgs.msg import TFMessage
 
 
 def quaternion_from_yaw(yaw):
@@ -65,7 +73,9 @@ class FullMissionNode(Node):
         self.declare_parameter("ring_aim_topic", "/ring_target/center_offset")
         self.declare_parameter("model_states_topic", "/gazebo/model_states")
         self.declare_parameter("robot_model_name", "abot_model")
-        self.declare_parameter("nav_timeout_sec", 90.0)
+        # 比赛规则：机器人静止超过 30 秒裁判可终止。导航超时按该红线收紧，
+        # 卡死时尽快取消重试而不是干等 90 秒。
+        self.declare_parameter("nav_timeout_sec", 40.0)
         self.declare_parameter("nav_goal_retries", 2)
         self.declare_parameter("initial_nav_goal_retries", 3)
         self.declare_parameter("nav_retry_delay_sec", 3.0)
@@ -82,11 +92,10 @@ class FullMissionNode(Node):
         self.declare_parameter("model_center_tolerance_rad", 0.012)
         self.declare_parameter("model_aim_gain", 1.8)
         self.declare_parameter("max_angular_speed", 0.35)
-        self.declare_parameter("wheel_height_tolerance_m", 0.025)
+        self.declare_parameter("wheel_height_tolerance_m", 0.015)
         self.declare_parameter("required_stable_cycles", 4)
         self.declare_parameter("ring_aim_mode", "model")
         self.declare_parameter("wheel_stable_cycles", 2)
-        self.declare_parameter("shots_per_target", 1)
         self.declare_parameter("fire_without_aim", True)
         self.declare_parameter("fire_response_timeout_sec", 8.0)
         self.declare_parameter("target_2_id", 1)
@@ -96,6 +105,32 @@ class FullMissionNode(Node):
         self.declare_parameter("referee_target_plan_topic", "/referee/target_plan")
         self.declare_parameter("referee_current_target_topic", "/referee/current_target")
         self.declare_parameter("referee_mission_event_topic", "/referee/mission_event")
+        # map->odom 由 AMCL 发布；实测中 AMCL 可能长时间停更（冻结数分钟），
+        # 导致 Nav2 控制器拿不到新鲜 TF、目标反复超时。这里按"最近一次收到且
+        # 时间戳在前进的 map->odom"判定 TF 是否新鲜，导航前先等 TF，导航中
+        # 停更则取消目标，等恢复后续跑，而不是干等 90s 超时烧掉重试次数。
+        self.declare_parameter("tf_stale_max_age_sec", 2.0)
+        self.declare_parameter("tf_stall_confirm_sec", 4.0)
+        self.declare_parameter("tf_recover_timeout_sec", 150.0)
+        self.declare_parameter("tf_max_resends", 4)
+        # TF 停摆时用 Gazebo 真值向 /initialpose 重发当前位姿踢活 AMCL，
+        # 避免干等 AMCL 自行恢复（实测可停摆数分钟）。仅仿真环境有意义。
+        self.declare_parameter("recover_amcl_on_stall", True)
+        self.declare_parameter("amcl_kick_topic", "/initialpose")
+        self.declare_parameter("amcl_kick_delay_sec", 5.0)
+        self.declare_parameter("amcl_kick_interval_sec", 6.0)
+        # 叶片穿越枪口高度窗口的判定迟滞：离开该带才允许翻转通过点方向，
+        # 避免在窗口边缘来回切换瞄准目标。
+        self.declare_parameter("wheel_pass_hysteresis_m", 0.04)
+        # 每个目标默认补射一次：裁判确认命中后跳过补射，未命中（或裁判
+        # 无回音）才重新瞄准补射，把一次脱靶的 10 分损失救回来。
+        self.declare_parameter("shots_per_target", 2)
+        self.declare_parameter("referee_reset_service", "/referee/reset")
+        self.declare_parameter("reset_referee_on_start", True)
+        self.declare_parameter("referee_score_detail_topic", "/referee/score_detail")
+        # 移动靶命中点预测：按靶标速度 × 弹丸飞行时间前置瞄准。
+        self.declare_parameter("moving_target_lead", True)
+        self.declare_parameter("bullet_speed_mps", 20.0)
 
         self.target_ids = {
             2: int(self.get_parameter("target_2_id").value),
@@ -159,6 +194,35 @@ class FullMissionNode(Node):
             self.on_model_states,
             qos_profile_sensor_data,
         )
+        self.map_odom_last_wall = None
+        self.map_odom_last_stamp = None
+        self.create_subscription(TFMessage, "/tf", self.on_tf, qos_profile_sensor_data)
+
+        # 裁判计分明细（latched）：用于确认当前目标是否已命中，命中则跳过补射。
+        self.score_detail = {}
+        detail_qos = QoSProfile(depth=1)
+        detail_qos.reliability = ReliabilityPolicy.RELIABLE
+        detail_qos.durability = DurabilityPolicy.TRANSIENT_LOCAL
+        self.create_subscription(
+            String,
+            str(self.get_parameter("referee_score_detail_topic").value),
+            self.on_score_detail,
+            detail_qos,
+        )
+        self.referee_reset_client = self.create_client(
+            Trigger, str(self.get_parameter("referee_reset_service").value)
+        )
+        self.referee_reset_done = not bool(
+            self.get_parameter("reset_referee_on_start").value
+        )
+        self.last_reset_attempt_monotonic = 0.0
+        # AMCL 踢活：TF 停摆超时后用真值重发初始位姿。
+        self.initial_pose_pub = self.create_publisher(
+            PoseWithCovarianceStamped,
+            str(self.get_parameter("amcl_kick_topic").value),
+            10,
+        )
+        self.last_amcl_kick_monotonic = None
 
         self.start_delay = Duration(seconds=float(self.get_parameter("start_delay_sec").value))
         self.nav_timeout = Duration(seconds=float(self.get_parameter("nav_timeout_sec").value))
@@ -202,6 +266,18 @@ class FullMissionNode(Node):
         )
         self.publish_referee_targets = bool(self.get_parameter("publish_referee_targets").value)
         self.robot_model_name = str(self.get_parameter("robot_model_name").value)
+        self.tf_stale_max_age_sec = float(self.get_parameter("tf_stale_max_age_sec").value)
+        self.tf_stall_confirm_sec = float(self.get_parameter("tf_stall_confirm_sec").value)
+        self.tf_recover_timeout_sec = float(self.get_parameter("tf_recover_timeout_sec").value)
+        self.tf_max_resends = int(self.get_parameter("tf_max_resends").value)
+        self.wheel_pass_hysteresis_m = float(
+            self.get_parameter("wheel_pass_hysteresis_m").value
+        )
+        self.recover_amcl_on_stall = bool(self.get_parameter("recover_amcl_on_stall").value)
+        self.amcl_kick_delay_sec = float(self.get_parameter("amcl_kick_delay_sec").value)
+        self.amcl_kick_interval_sec = float(self.get_parameter("amcl_kick_interval_sec").value)
+        self.moving_target_lead = bool(self.get_parameter("moving_target_lead").value)
+        self.bullet_speed_mps = float(self.get_parameter("bullet_speed_mps").value)
 
         self.state = "waiting"
         self.waypoint_index = 0
@@ -212,6 +288,10 @@ class FullMissionNode(Node):
         self.nav_attempt = 0
         self.nav_retry_start_monotonic = None
         self.nav_failure_time_monotonic = None
+        self.tf_resend_count = 0
+        self.tf_stale_since_monotonic = None
+        self.tf_wait_start_monotonic = None
+        self.wheel_pass_side = 1.0
         self.aim_start_time = None
         self.aim_start_monotonic = None
         self.shot_done_time = None
@@ -222,6 +302,9 @@ class FullMissionNode(Node):
         self.latest_ring_offset = None
         self.latest_ring_time = None
         self.model_poses = {}
+        # 移动靶速度估计（用于命中点前置）：model_name -> (vx, vy, monotonic)
+        self.model_velocity = {}
+        self.model_prev_pose = {}
         self.last_wait_log_time = None
         self.timer = self.create_timer(0.05, self.tick)
 
@@ -267,10 +350,82 @@ class FullMissionNode(Node):
 
     def on_model_states(self, msg):
         self.model_poses = dict(zip(msg.name, msg.pose))
+        now = time.monotonic()
+        for name in ("target_moving_3", "target_moving_4"):
+            pose = self.model_poses.get(name)
+            if pose is None:
+                continue
+            prev = self.model_prev_pose.get(name)
+            self.model_prev_pose[name] = (pose.position.x, pose.position.y, now)
+            if prev is None:
+                continue
+            dt = now - prev[2]
+            if dt < 0.01:
+                continue
+            vx = (pose.position.x - prev[0]) / dt
+            vy = (pose.position.y - prev[1]) / dt
+            last = self.model_velocity.get(name)
+            if last is not None and now - last[2] < 0.5:
+                # 一阶低通平滑，抑制 /gazebo/model_states 采样抖动。
+                vx = 0.5 * last[0] + 0.5 * vx
+                vy = 0.5 * last[1] + 0.5 * vy
+            self.model_velocity[name] = (vx, vy, now)
+
+    def on_score_detail(self, msg):
+        try:
+            detail = json.loads(msg.data)
+            shooting = detail.get("shooting")
+            if isinstance(shooting, dict):
+                self.score_detail = shooting
+        except (ValueError, TypeError):
+            pass
+
+    def hit_confirmed(self, task_number):
+        """裁判计分明细里是否已有该任务点的命中记录。"""
+        return str(task_number) in self.score_detail
+
+    def try_reset_referee(self):
+        """开局清零裁判计分，避免上一轮残留的命中记录阻止本轮射击。"""
+        if self.referee_reset_done or not self.referee_reset_client.service_is_ready():
+            return
+        if time.monotonic() - self.last_reset_attempt_monotonic < 1.0:
+            return
+        self.last_reset_attempt_monotonic = time.monotonic()
+        future = self.referee_reset_client.call_async(Trigger.Request())
+        future.add_done_callback(self.on_referee_reset_done)
+
+    def on_referee_reset_done(self, future):
+        try:
+            result = future.result()
+        except Exception as exc:
+            self.get_logger().warn(f"调用裁判重置服务失败：{exc}")
+            return
+        if result.success:
+            self.referee_reset_done = True
+            self.score_detail = {}
+            self.get_logger().info("已清零裁判计分，本轮任务重新开始计分。")
+        else:
+            self.get_logger().warn(f"裁判重置失败：{result.message}")
+
+    def on_tf(self, msg):
+        for transform in msg.transforms:
+            if transform.header.frame_id == "map" and transform.child_frame_id == "odom":
+                stamp = transform.header.stamp.sec + transform.header.stamp.nanosec / 1e9
+                # 只在时间戳前进时刷新：AMCL 停滞后仍可能重复发布旧时间戳，
+                # 那种"活着但冻结"的 TF 不能算新鲜。
+                if stamp != self.map_odom_last_stamp:
+                    self.map_odom_last_stamp = stamp
+                    self.map_odom_last_wall = time.monotonic()
+
+    def map_tf_is_fresh(self):
+        if self.map_odom_last_wall is None:
+            return False
+        return time.monotonic() - self.map_odom_last_wall <= self.tf_stale_max_age_sec
 
     def tick(self):
         now = self.get_clock().now()
         if self.state == "waiting":
+            self.try_reset_referee()
             if now - self.boot_time >= self.start_delay:
                 self.start_navigation()
             return
@@ -281,6 +436,9 @@ class FullMissionNode(Node):
             elapsed = time.monotonic() - self.nav_retry_start_monotonic
             if elapsed >= self.nav_retry_delay_sec:
                 self.start_navigation(is_retry=True)
+            return
+        if self.state == "nav_tf_wait":
+            self.update_tf_wait()
             return
         if self.state == "nav_failure_settle":
             elapsed = time.monotonic() - self.nav_failure_time_monotonic
@@ -308,17 +466,22 @@ class FullMissionNode(Node):
                 self.start_navigation()
 
     def start_navigation(self, is_retry=False):
-        if not self.nav_client.wait_for_server(timeout_sec=0.1):
-            self.log_waiting("等待 Nav2 /navigate_to_pose action server...")
-            self.state = "waiting_for_nav"
-            # Keep using the timer without resetting the mission start delay.
-            self.state = "waiting"
-            return
-
-        waypoint = self.current_waypoint
         if not is_retry:
             self.nav_attempt = 0
+            self.tf_resend_count = 0
+        if not self.nav_client.wait_for_server(timeout_sec=0.1):
+            self.log_waiting("等待 Nav2 /navigate_to_pose action server...")
+            return
+        if not self.map_tf_is_fresh():
+            self.log_waiting("map->odom TF 不新鲜，暂缓发送导航目标...")
+            self.tf_wait_start_monotonic = time.monotonic()
+            self.state = "nav_tf_wait"
+            return
         self.nav_attempt += 1
+        self.send_nav_goal()
+
+    def send_nav_goal(self):
+        waypoint = self.current_waypoint
         goal = NavigateToPose.Goal()
         goal.pose = PoseStamped()
         goal.pose.header.frame_id = "map"
@@ -335,7 +498,69 @@ class FullMissionNode(Node):
         self.nav_start_time = self.get_clock().now()
         self.nav_goal_handle = None
         self.nav_result_future = None
+        self.tf_stale_since_monotonic = None
         self.state = "navigating"
+
+    def update_tf_wait(self):
+        if self.map_tf_is_fresh():
+            self.tf_wait_start_monotonic = None
+            self.get_logger().info("map->odom TF 已恢复，继续发送导航目标。")
+            if self.nav_attempt == 0:
+                # 首次发送被 TF 停摆推迟，恢复后作为第 1 次尝试计。
+                self.start_navigation(is_retry=True)
+            elif self.tf_resend_count >= self.tf_max_resends:
+                self.get_logger().warn("TF 恢复后的重发次数已达上限，按导航失败处理。")
+                self.retry_or_finish_navigation()
+            else:
+                self.tf_resend_count += 1
+                # 继续被停摆打断的当前尝试，不消耗导航重试预算。
+                self.send_nav_goal()
+            return
+        self.log_waiting("等待 map->odom TF 恢复...")
+        self.kick_amcl_if_stalled()
+        if (
+            self.tf_wait_start_monotonic is not None
+            and time.monotonic() - self.tf_wait_start_monotonic > self.tf_recover_timeout_sec
+        ):
+            self.tf_wait_start_monotonic = None
+            self.get_logger().error(
+                f"map->odom TF 超过 {self.tf_recover_timeout_sec:.0f}s 未恢复，按导航失败处理。"
+            )
+            self.retry_or_finish_navigation()
+
+    def kick_amcl_if_stalled(self):
+        """TF 停摆超时后，用 Gazebo 真值重发 /initialpose 踢活 AMCL。
+
+        实测 AMCL 停摆可长达数分钟且不会自行恢复；比赛规则不允许机器人
+        长时间静止。重发初始位姿会让 AMCL 在真值附近重撒粒子并恢复发布
+        map->odom，是仿真环境下最直接的止血手段。
+        """
+        if not self.recover_amcl_on_stall or self.tf_wait_start_monotonic is None:
+            return
+        stalled_for = time.monotonic() - self.tf_wait_start_monotonic
+        if stalled_for < self.amcl_kick_delay_sec:
+            return
+        now = time.monotonic()
+        if (
+            self.last_amcl_kick_monotonic is not None
+            and now - self.last_amcl_kick_monotonic < self.amcl_kick_interval_sec
+        ):
+            return
+        robot_pose = self.model_poses.get(self.robot_model_name)
+        if robot_pose is None:
+            return
+        msg = PoseWithCovarianceStamped()
+        msg.header.frame_id = "map"
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.pose.pose = robot_pose
+        msg.pose.covariance[0] = 0.05
+        msg.pose.covariance[7] = 0.05
+        msg.pose.covariance[35] = 0.05
+        self.initial_pose_pub.publish(msg)
+        self.last_amcl_kick_monotonic = now
+        self.get_logger().warn(
+            f"map->odom TF 停摆 {stalled_for:.0f}s，已按真值重发 /initialpose 踢活 AMCL。"
+        )
 
     def on_nav_goal_response(self, future):
         try:
@@ -368,6 +593,23 @@ class FullMissionNode(Node):
                 )
             self.finish_navigation(succeeded)
             return
+        if not self.map_tf_is_fresh():
+            if self.tf_stale_since_monotonic is None:
+                self.tf_stale_since_monotonic = time.monotonic()
+            elif time.monotonic() - self.tf_stale_since_monotonic >= self.tf_stall_confirm_sec:
+                stale_for = time.monotonic() - self.tf_stale_since_monotonic
+                self.get_logger().warn(
+                    f"前往 {self.current_waypoint['label']} 期间 map->odom TF 停更 "
+                    f"{stale_for:.0f}s，取消当前目标并等待恢复。"
+                )
+                if self.nav_goal_handle is not None:
+                    self.nav_goal_handle.cancel_goal_async()
+                self.stop_robot()
+                self.tf_stale_since_monotonic = None
+                self.tf_wait_start_monotonic = time.monotonic()
+                self.state = "nav_tf_wait"
+            return
+        self.tf_stale_since_monotonic = None
         if self.nav_start_time is not None and now - self.nav_start_time > self.nav_timeout:
             if self.robot_is_inside_current_task_area():
                 self.get_logger().warn(
@@ -445,6 +687,11 @@ class FullMissionNode(Node):
         self.get_logger().info(f"开始瞄准 {self.current_waypoint['label']}{suffix}。")
 
     def update_aiming(self, now):
+        if self.hit_confirmed(self.current_waypoint["number"]):
+            # 裁判已确认命中（补射期间命中回执到达），立即停射继续任务。
+            self.stop_robot()
+            self.complete_shot_step()
+            return
         if self.current_waypoint["aim"] == "ring" and self.ring_aim_mode == "vision":
             ready = self.update_ring_aim(now)
         else:
@@ -533,6 +780,37 @@ class FullMissionNode(Node):
         )
         if aim_type == "wheel":
             height_ready = abs(point[2] - 0.26) <= self.wheel_height_tolerance
+            # 叶片绕水平轴旋转，只有经过枪口高度(0.26m)的窗口才可能被水平弹道
+            # 命中；而穿越窗口时叶片横向偏移恰好达到最大值(±半径)且在窗口内
+            # 近似恒定。若直接瞄准叶片瞬时位置，需求航向随旋转正弦摆动 ±3.3°，
+            # 窗口开启瞬间偏差最大，实测永远对不齐（对准容差仅 0.69°）。改为
+            # 瞄准叶片"即将穿越枪口高度"的通过点：方向由当前叶片在轮心上方/
+            # 下方决定，旋转方向不变时为固定值，机器人可先对准再静候窗口。
+            radius = math.hypot(local_y, local_z)
+            if abs(rotated[2]) > self.wheel_pass_hysteresis_m:
+                self.wheel_pass_side = -1.0 if rotated[2] > 0.0 else 1.0
+            point = (
+                point[0],
+                pose.position.y + self.wheel_pass_side * radius,
+                point[2],
+            )
+        elif aim_type == "moving" and self.moving_target_lead:
+            # 弹丸飞行期间靶标继续平移（实测 ~0.1m，判定区半宽仅 0.05m），
+            # 按靶标速度 × 飞行时间把瞄准点前置到预计命中位置。
+            velocity = self.model_velocity.get(self.current_waypoint["model"])
+            if velocity is not None and time.monotonic() - velocity[2] <= 0.5:
+                robot_pose = self.model_poses.get(self.robot_model_name)
+                if robot_pose is not None:
+                    distance = math.hypot(
+                        point[0] - robot_pose.position.x,
+                        point[1] - robot_pose.position.y,
+                    )
+                    t_flight = distance / max(self.bullet_speed_mps, 0.1)
+                    point = (
+                        point[0] + velocity[0] * t_flight,
+                        point[1] + velocity[1] * t_flight,
+                        point[2],
+                    )
         return point, height_ready
 
     def publish_angular(self, angular_speed):
@@ -568,7 +846,10 @@ class FullMissionNode(Node):
 
     def complete_shot_step(self):
         self.stop_robot()
-        if self.shots_fired < self.shots_per_target:
+        if (
+            self.shots_fired < self.shots_per_target
+            and not self.hit_confirmed(self.current_waypoint["number"])
+        ):
             self.get_logger().info(
                 f"在 {self.current_waypoint['label']} 补射"
                 f"（第 {self.shots_fired}/{self.shots_per_target} 发），重新瞄准。"

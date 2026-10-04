@@ -6,6 +6,11 @@ WORKSPACE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 SETUP_CMD="cd \"${WORKSPACE_DIR}\"; source /opt/ros/humble/setup.bash; source /opt/ican_shoot_sim/setup.bash; source \"${WORKSPACE_DIR}/install/setup.bash\""
 WAIT_READY="python3 \"${SCRIPT_DIR}/wait_for_ready.py\""
 
+# 旧栈没退干净就重新启动时，两套 nav2 / 两个任务节点会同时运行：
+# 机器人不动、一次发射两颗子弹都是这么来的。启动前先清一遍。
+echo "启动前清理残留的旧栈进程..."
+bash "${SCRIPT_DIR}/cleanup_stack.sh"
+
 if [[ -z "${DISPLAY:-}" && -z "${WAYLAND_DISPLAY:-}" ]]; then
   echo "未检测到图形界面（DISPLAY 为空），无法打开 gnome-terminal 标签页。" >&2
   echo "无界面环境（SSH/服务器）请改用以下等价命令分步启动：" >&2

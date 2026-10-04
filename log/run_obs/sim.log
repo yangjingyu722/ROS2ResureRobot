@@ -1,0 +1,20 @@
+[INFO] [launch]: All log files can be found below /home/yjy/.ros/log/2026-10-04-15-58-20-092909-yjy-virtual-machine-6101
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [6103]
+[INFO] [robot_state_publisher-2]: process started with pid [6105]
+[INFO] [target_motion_node.py-3]: process started with pid [6107]
+[INFO] [shooter_node-4]: process started with pid [6109]
+[robot_state_publisher-2] [INFO] [1791100700.243414026] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-2] [INFO] [1791100700.243725091] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1791100700.243736614] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-2] [INFO] [1791100700.243742114] [robot_state_publisher]: got segment laser_link
+[robot_state_publisher-2] [INFO] [1791100700.243746493] [robot_state_publisher]: got segment link_left_s
+[robot_state_publisher-2] [INFO] [1791100700.243750611] [robot_state_publisher]: got segment link_left_w
+[robot_state_publisher-2] [INFO] [1791100700.243754579] [robot_state_publisher]: got segment link_right_s
+[robot_state_publisher-2] [INFO] [1791100700.243758747] [robot_state_publisher]: got segment link_right_w
+[robot_state_publisher-2] [INFO] [1791100700.243763026] [robot_state_publisher]: got segment shout_link
+[gzserver-1] [INFO] [1791100701.138016003] [gazebo.gazebo_ros_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-1] [INFO] [1791100701.139642580] [gazebo.gazebo_ros_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[gzserver-1] [INFO] [1791100701.188024672] [ican_gazebo_planar_move]: iCAN planar move loaded for [abot_model], cmd_vel -> odom/base [odom/base_footprint]
+[shooter_node-4] [INFO] [1791100701.222560009] [shooter]: Shooter services ready on /shooter/fire and /shooter/shoot
+[target_motion_node.py-3] [INFO] [1791100701.347290738] [target_motion]: Target motion started for target_wheel, target_moving_3, target_moving_4
